@@ -8,28 +8,7 @@ import MatchChips from "./components/MatchChips";
 import MatchAttributes from "./components/MatchAttributes";
 import MatchResultsCount from "./components/MatchResultsCount";
 import MatchCandidatesList from "./components/MatchCandidatesList";
-
-// Dataset inicial con atributos
-const candidatesData = [
-  {
-    name: "Luis Quispe",
-    party: "Partido Popular",
-    age: 45,
-    region: "Áncash",
-    type: "Presidenciales",
-    proposal: "Mejorar el sistema de salud en zonas rurales.",
-    attributes: ["experiencia política", "estudios completos"],
-  },
-  {
-    name: "Ana Flores",
-    party: "Alianza Perú",
-    age: 38,
-    region: "Lima",
-    type: "Presidenciales",
-    proposal: "Incentivos para tecnología minera sostenible.",
-    attributes: ["menor de 30", "estudios completos"],
-  },
-];
+import { candidatesData } from "./data/candidatesData";
 
 export default function MatchPage() {
   // Estados principales
