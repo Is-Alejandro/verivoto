@@ -5,6 +5,9 @@ import HomePage from "../features/home/HomePage";
 import CalendarPage from "../features/calendar/CalendarPage";
 import MatchPage from "../features/match/MatchPage";
 
+// Nueva página del verificador
+import VerificadorPage from "../features/verificador/VerificadorPage";
+
 // Layout global
 import Layout from "../components/layout/Layout";
 
@@ -90,6 +93,9 @@ export default function AppRouter() {
 
                 {/* Match */}
                 <Route path="/match" element={<MatchPage />} />
+
+                {/* Verificador */}
+                <Route path="/verificador" element={<VerificadorPage />} />
 
                 {/* Manejo de 404 */}
                 <Route path="*" element={<Navigate to="/" replace />} />
