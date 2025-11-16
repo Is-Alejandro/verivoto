@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
 import VerificadorIntro from "./components/VerificadorIntro";
 import VerificadorTextarea from "./components/VerificadorTextarea";
@@ -8,6 +9,7 @@ import VerificacionesHistorial from "./components/VerificacionesHistorial";
 import { VerificacionItem } from "./types";
 
 export default function VerificadorPage() {
+  const navigate = useNavigate();
   const [texto, setTexto] = useState("");
 
   const [historial, setHistorial] = useState<VerificacionItem[]>([
@@ -30,6 +32,18 @@ export default function VerificadorPage() {
   const handleVerificar = () => {
     if (!texto.trim()) return;
 
+    // 🔥 Resultado aleatorio — simula IA
+    const resultado = Math.random() > 0.5 ? "verdadero" : "falso";
+
+    // 👇 Navegar y pasar datos
+    navigate("/verificador/resultado", {
+      state: {
+        texto,
+        resultado,
+      },
+    });
+
+    // Agregar al historial visual
     const nuevo: VerificacionItem = {
       id: Date.now(),
       status: "warning",
