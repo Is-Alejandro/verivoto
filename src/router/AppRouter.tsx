@@ -14,6 +14,10 @@ import InfoElectoresPage from "../features/infoElectores/InfoElectoresPage";
 import AprendeHomePage from "../features/aprende/AprendeHomePage";
 import AprendeCategoriaPage from "../features/aprende/AprendeCategoriaPage";
 
+// NUEVO: Lecciones de Votación
+import VotacionLeccionesPage from "../features/aprende/VotacionLeccionesPage";
+import VotacionLeccion1Page from "../features/aprende/VotacionLeccion1Page";
+
 interface PlaceholderProps {
   title: string;
 }
@@ -23,8 +27,7 @@ function PlaceholderPage({ title }: PlaceholderProps) {
     <div className="p-6">
       <h1 className="text-2xl font-bold text-neutral-900">{title}</h1>
       <p className="mt-2 text-neutral-600 text-sm">
-        Esta pantalla aún no está desarrollada.
-        (Pero ya tiene navegación funcional.)
+        Esta pantalla aún no está desarrollada. (Pero ya tiene navegación funcional.)
       </p>
     </div>
   );
@@ -79,12 +82,7 @@ export default function AppRouter() {
           {/* Categorías internas */}
           <Route
             path="/aprende/votacion"
-            element={
-              <AprendeCategoriaPage
-                title="¿Cómo funciona la votación?"
-                description="Aprende el proceso paso a paso."
-              />
-            }
+            element={<VotacionLeccionesPage />}
           />
 
           <Route
@@ -115,6 +113,16 @@ export default function AppRouter() {
                 description="Todo lo que debe saber un elector responsable."
               />
             }
+          />
+
+          {/* ----------------------------- */}
+          {/*      LECCIONES INTERNAS      */}
+          {/* ----------------------------- */}
+
+          {/* Lección 1 de votación */}
+          <Route
+            path="/aprende/votacion/leccion-1"
+            element={<VotacionLeccion1Page />}
           />
 
           {/* Redirects */}
