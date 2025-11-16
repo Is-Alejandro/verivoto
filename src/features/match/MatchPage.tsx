@@ -1,5 +1,6 @@
 import Layout from "../../components/layout/Layout";
 import MatchTitle from "./components/MatchTitle";
+import MatchSearchBar from "./components/MatchSeachBar";
 
 export default function MatchPage() {
     return (
@@ -9,16 +10,8 @@ export default function MatchPage() {
                 <MatchTitle />
 
                 {/* Barra de búsqueda */}
-                <div className="mt-4 flex">
-                    <input
-                        type="text"
-                        placeholder="Buscar..."
-                        className="flex-1 bg-white border border-neutral-300 px-4 py-2 rounded-l-xl outline-none"
-                    />
-                    <button className="bg-blue-600 px-4 rounded-r-xl text-white">
-                        🔍
-                    </button>
-                </div>
+                <MatchSearchBar />
+
 
                 {/* Selectores principales */}
                 <div className="grid grid-cols-2 gap-3 mt-4">
