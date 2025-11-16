@@ -1,8 +1,10 @@
 import { ArrowLeft, GraduationCap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "../../i18n/useTranslation";
 
 export default function AprendeHomePage() {
   const navigate = useNavigate();
+  const t = useTranslation();
 
   return (
     <div className="min-h-screen bg-[#F5F7FA] pb-24">
@@ -16,17 +18,17 @@ export default function AprendeHomePage() {
         <GraduationCap size={28} className="text-blue-600" />
 
         <h1 className="text-[20px] font-semibold text-neutral-900">
-          Aprende: Conocimiento Electoral
+          {t("aprender_title")}
         </h1>
       </header>
 
       {/* SUBTÍTULO */}
       <div className="px-4 mt-3">
         <h2 className="text-[17px] font-semibold text-neutral-900">
-          Pon a prueba tu conocimiento electoral
+          {t("aprende_subtitle")}
         </h2>
         <p className="text-[14px] text-neutral-600 mt-1">
-          Elige una categoría para empezar.
+          {t("aprende_subtext")}
         </p>
       </div>
 
@@ -44,7 +46,7 @@ export default function AprendeHomePage() {
           />
           <div className="p-3">
             <p className="font-medium text-neutral-800 text-[15px] leading-tight">
-              ¿Cómo funciona la Votación?
+              {t("categoria_votacion")}
             </p>
 
             {/* Barra progreso */}
@@ -65,7 +67,7 @@ export default function AprendeHomePage() {
           />
           <div className="p-3">
             <p className="font-medium text-neutral-800 text-[15px] leading-tight">
-              Historia de las Elecciones
+              {t("categoria_historia")}
             </p>
             <div className="h-2 bg-neutral-200 rounded-full mt-2">
               <div className="h-full bg-blue-600 rounded-full w-1/5"></div>
@@ -84,7 +86,7 @@ export default function AprendeHomePage() {
           />
           <div className="p-3">
             <p className="font-medium text-neutral-800 text-[15px] leading-tight">
-              Partidos y Candidatos
+              {t("categoria_partidos")}
             </p>
             <div className="h-2 bg-neutral-200 rounded-full mt-2">
               <div className="h-full bg-blue-600 rounded-full w-1/6"></div>
@@ -103,7 +105,7 @@ export default function AprendeHomePage() {
           />
           <div className="p-3">
             <p className="font-medium text-neutral-800 text-[15px] leading-tight">
-              Reglas Electorales Clave
+              {t("categoria_reglas")}
             </p>
             <div className="h-2 bg-neutral-200 rounded-full mt-2">
               <div className="h-full bg-blue-600 rounded-full w-1/4"></div>
@@ -116,13 +118,13 @@ export default function AprendeHomePage() {
       {/* SECCIÓN LOGROS */}
       <div className="mt-7 px-4">
         <h3 className="font-semibold text-neutral-800 text-[17px]">
-          Mis Logros
+          {t("mis_logros")}
         </h3>
 
         <div className="bg-white rounded-xl p-4 shadow-sm mt-3">
-          <p className="font-medium text-neutral-800">Votante Informado</p>
+          <p className="font-medium text-neutral-800">{t("logro_1")}</p>
           <p className="text-sm text-neutral-600 mt-1">
-            Completa tu primer quiz.
+            {t("logro_1_desc")}
           </p>
         </div>
       </div>

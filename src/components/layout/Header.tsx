@@ -1,14 +1,25 @@
-import { UserCircle, Lamp, Accessibility, Info, Bell } from "lucide-react";
+import { UserCircle, Lamp, Accessibility, Info, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Header() {
-
   const navigate = useNavigate();
+  const { language, setLanguage } = useLanguage();
+
+  // Alternar idioma: ES → EN → QU → ES...
+  const toggleLanguage = () => {
+    if (language === "es") setLanguage("en");
+    else if (language === "en") setLanguage("qu");
+    else setLanguage("es");
+  };
+
+  // Mostrar letra del idioma actual (ES / EN / QU)
+  const languageLabel = language.toUpperCase();
 
   return (
     <header className="h-[65px] w-full bg-white shadow-sm px-4 flex items-center justify-between sticky top-0 z-30">
       
-      {/* Parte izquierda: Avatar + Nombre */}
+      {/* IZQUIERDA: Avatar + Nombre */}
       <div className="flex items-center gap-3">
         <UserCircle size={38} className="text-neutral-700" />
 
@@ -19,7 +30,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Parte derecha: íconos */}
+      {/* DERECHA: Iconos */}
       <div className="flex items-center gap-5 text-neutral-600">
 
         {/* Aprende */}
@@ -41,9 +52,13 @@ export default function Header() {
           <Info size={20} />
         </div>
 
-        {/* Notificaciones */}
-        <div className="flex flex-col items-center text-xs cursor-pointer">
-          <Bell size={20} />
+        {/* Selector de Idioma — reemplaza la campana */}
+        <div
+          className="flex flex-col items-center text-xs cursor-pointer"
+          onClick={toggleLanguage}
+        >
+          <Globe size={20} />
+          <span className="text-[11px] mt-1">{languageLabel}</span>
         </div>
 
       </div>
