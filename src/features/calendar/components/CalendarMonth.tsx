@@ -1,7 +1,12 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { eventsData } from "../../../data/eventsData";
 
-export default function CalendarMonth() {
+interface CalendarMonthProps {
+    selectedDate: string | null;
+    setSelectedDate: React.Dispatch<React.SetStateAction<string | null>>;
+  }  
+
+export default function CalendarMonth({ selectedDate, setSelectedDate }: CalendarMonthProps) {
     const monthName = "Abril";
     const year = 2026;
 
@@ -11,10 +16,10 @@ export default function CalendarMonth() {
     // Abril 2026 inicia miércoles → índice 2
     const startDayIndex = 2;
 
-    // ✔ FILTRAR SOLO LOS EVENTOS DE ESTE MES (Abril 2026)
+    // Filtrar eventos del mes
     const monthEvents = eventsData.filter(ev => ev.date.startsWith("2026-04"));
 
-    // ✔ MAPEAR EVENTOS A SU DÍA Y COLOR
+    // Mapear eventos a día → color
     const eventMap = new Map(
         monthEvents.map(ev => {
             const day = Number(ev.date.split("-")[2]);
@@ -22,14 +27,13 @@ export default function CalendarMonth() {
         })
     );
 
-    // Días vacíos antes del día 1
     const emptyDays = Array.from({ length: startDayIndex }, () => null);
     const monthDays = Array.from({ length: totalDays }, (_, i) => i + 1);
-
     const calendarGrid = [...emptyDays, ...monthDays];
 
     return (
         <div className="mt-6">
+            
             {/* HEADER DEL MES */}
             <div className="flex items-center justify-between mb-3">
                 <button className="p-2 active:scale-90 transition">
@@ -57,24 +61,39 @@ export default function CalendarMonth() {
                 ))}
             </div>
 
-            {/* GRID DEL MES CON EVENTOS */}
+            {/* GRID DEL MES */}
             <div className="grid grid-cols-7 gap-2">
                 {calendarGrid.map((day, index) => {
                     const hasEvent = day !== null && eventMap.has(day);
                     const eventColor = hasEvent ? eventMap.get(day!) : null;
 
+                    const isSelected =
+                        selectedDate === `2026-04-${String(day).padStart(2, "0")}`;
+
                     return (
                         <div
                             key={index}
+                            onClick={() => {
+                                if (!day) return;
+
+                                const dateString = `2026-04-${String(day).padStart(2, "0")}`;
+
+                                // 🔵 Toggle de selección:
+                                setSelectedDate(prev =>
+                                    prev === dateString ? null : dateString
+                                );
+                            }}
                             className={`
                                 h-12 flex flex-col items-center justify-center
-                                rounded-xl shadow-sm 
+                                rounded-xl shadow-sm cursor-pointer transition
+
                                 ${day ? "bg-white text-neutral-800 font-medium" : "bg-transparent"}
+
+                                ${isSelected ? "bg-blue-100 ring-2 ring-blue-500" : ""}
                             `}
                         >
                             {day}
 
-                            {/* PUNTITO DE EVENTO */}
                             {hasEvent && (
                                 <span
                                     className={`w-2 h-2 rounded-full mt-1 ${eventColor}`}

@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Layout from "../../components/layout/Layout";
 import UpcomingEventsCarousel from "./components/UpcomingEventsCarousel";
 import CalendarMonth from "./components/CalendarMonth";
 import MonthEventsList from "./components/MonthEventList";
 
 export default function CalendarPage() {
+  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+
   return (
     <Layout>
       <div className="mt-2">
@@ -12,9 +15,13 @@ export default function CalendarPage() {
         <UpcomingEventsCarousel />
 
         {/* Calendario Mensual */}
-        <CalendarMonth />
+        <CalendarMonth 
+          selectedDate={selectedDate}
+          setSelectedDate={setSelectedDate}
+        />
 
-        <MonthEventsList />
+        {/* Lista dinámica según el día seleccionado */}
+        <MonthEventsList selectedDate={selectedDate} />
 
       </div>
     </Layout>
