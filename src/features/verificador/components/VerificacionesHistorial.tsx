@@ -6,6 +6,15 @@ interface Props {
 }
 
 export default function VerificacionesHistorial({ historial }: Props) {
+
+  if (historial.length === 0) {
+    return (
+      <div className="mt-6 mb-20 text-center text-neutral-500 text-sm">
+        Aún no hay verificaciones realizadas.
+      </div>
+    );
+  }
+
   return (
     <div className="mt-6 mb-20">
       <h2 className="text-lg font-semibold text-neutral-800 mb-3">

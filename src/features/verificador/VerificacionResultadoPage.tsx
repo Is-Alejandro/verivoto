@@ -37,11 +37,9 @@ export default function VerificacionResultadoPage() {
   };
 
   return (
-    <Layout>
       <div className="mt-4">
         <ResultadoVolver />
         <ResultadoCard detalle={detalle} texto={texto} />
       </div>
-    </Layout>
   );
 }

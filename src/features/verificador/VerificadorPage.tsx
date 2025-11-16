@@ -1,41 +1,29 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import VerificadorIntro from "./components/VerificadorIntro";
 import VerificadorTextarea from "./components/VerificadorTextarea";
 import VerificarButton from "./components/VerificadorButton";
 import VerificacionesHistorial from "./components/VerificacionesHistorial";
 
-import { VerificacionItem } from "./types";
+import { useVerificador } from "./components/VerificadorContext";
 
 export default function VerificadorPage() {
   const navigate = useNavigate();
   const [texto, setTexto] = useState("");
 
-  const [historial, setHistorial] = useState<VerificacionItem[]>([
-    {
-      id: 1,
-      status: "warning",
-      texto:
-        "Declaración sobre presupuesto de educación fue sacada de contexto...",
-      fecha: "Hace 2 horas",
-    },
-    {
-      id: 2,
-      status: "success",
-      texto:
-        "La ONPE confirma la fecha para la capacitación de miembros de mesa...",
-      fecha: "Ayer",
-    },
-  ]);
+  // ⬇️ AHORA EL HISTORIAL VIENE DEL CONTEXT GLOBAL
+  const { historial, agregarVerificacion } = useVerificador();
 
   const handleVerificar = () => {
     if (!texto.trim()) return;
 
-    // 🔥 Resultado aleatorio — simula IA
+    // Resultado mock
     const resultado = Math.random() > 0.5 ? "verdadero" : "falso";
 
-    // 👇 Navegar y pasar datos
+    // Guardar en el historial global
+    agregarVerificacion(texto, resultado);
+
+    // Navegar al resultado
     navigate("/verificador/resultado", {
       state: {
         texto,
@@ -43,27 +31,20 @@ export default function VerificadorPage() {
       },
     });
 
-    // Agregar al historial visual
-    const nuevo: VerificacionItem = {
-      id: Date.now(),
-      status: "warning",
-      texto,
-      fecha: "Justo ahora",
-    };
-
-    setHistorial([nuevo, ...historial]);
+    // Limpiar textarea
     setTexto("");
   };
 
   return (
-    <Layout>
+    <div>
       <VerificadorIntro />
 
       <VerificadorTextarea value={texto} onChange={setTexto} />
 
       <VerificarButton onClick={handleVerificar} />
 
+      {/* Historial global y persistente */}
       <VerificacionesHistorial historial={historial} />
-    </Layout>
+    </div>
   );
 }

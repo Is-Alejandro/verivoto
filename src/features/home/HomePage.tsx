@@ -7,7 +7,7 @@ import CandidatesSection from "./components/CandidatesSection";
 
 export default function HomePage() {
     return (
-        <Layout>
+        <div>
             <div className="mt-2">
                 {/* Greeting Mejorado */}
                 <h1 className="text-3xl font-bold text-neutral-900 flex items-center gap-2 mt-2">
@@ -30,6 +30,6 @@ export default function HomePage() {
                 <CandidatesSection />
 
             </div>
-        </Layout>
+        </div>
     );
 }
