@@ -1,6 +1,9 @@
 import { MapPin, Users, Info } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function QuickActions() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white rounded-2xl shadow-md shadow-black/5 mt-6 border border-neutral-200">
       
@@ -8,7 +11,10 @@ export default function QuickActions() {
       <div className="grid grid-cols-2 divide-x divide-neutral-200 border-b border-neutral-200">
         
         {/* Mi local de votación */}
-        <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+        <button
+          onClick={() => navigate("/local-votacion")}
+          className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition"
+        >
           <div className="bg-blue-50 p-2 rounded-lg">
             <MapPin size={18} className="text-blue-600" />
           </div>
@@ -16,7 +22,10 @@ export default function QuickActions() {
         </button>
 
         {/* Miembro de mesa */}
-        <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+        <button
+          onClick={() => navigate("/miembro-mesa")}
+          className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition"
+        >
           <div className="bg-purple-50 p-2 rounded-lg">
             <Users size={18} className="text-purple-600" />
           </div>
@@ -26,7 +35,10 @@ export default function QuickActions() {
       </div>
 
       {/* Información para electores */}
-      <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+      <button
+        onClick={() => navigate("/info-electores")}
+        className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition"
+      >
         <div className="bg-emerald-50 p-2 rounded-lg">
           <Info size={18} className="text-emerald-600" />
         </div>
