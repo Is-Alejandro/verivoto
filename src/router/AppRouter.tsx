@@ -1,9 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 // Pages reales
 import HomePage from "../features/home/HomePage";
 import CalendarPage from "../features/calendar/CalendarPage";
 import MatchPage from "../features/match/MatchPage";
+import VotingLocationPage from "../features/voting-location/VotingLocationPage";
+import OnboardingPage from "../features/onboarding/OnboardingPage";
 
 // Layout global
 import Layout from "../components/layout/Layout";
@@ -26,70 +29,103 @@ function PlaceholderPage({ title }: PlaceholderProps) {
     );
 }
 
+// Componente para proteger rutas
+function ProtectedRoute({ children }: { children: React.ReactNode }) {
+    const [isOnboardingCompleted, setIsOnboardingCompleted] = useState(
+        localStorage.getItem("onboardingCompleted") === "true"
+    );
+
+    useEffect(() => {
+        const checkOnboarding = () => {
+            setIsOnboardingCompleted(localStorage.getItem("onboardingCompleted") === "true");
+        };
+
+        // Escuchar cambios en localStorage
+        window.addEventListener("storage", checkOnboarding);
+        
+        return () => {
+            window.removeEventListener("storage", checkOnboarding);
+        };
+    }, []);
+
+    if (!isOnboardingCompleted) {
+        return <Navigate to="/onboarding" replace />;
+    }
+
+    return <>{children}</>;
+}
+
 export default function AppRouter() {
+
     return (
         <BrowserRouter>
             <Routes>
 
-                {/* Home */}
-                <Route path="/" element={<HomePage />} />
+                {/* Onboarding */}
+                <Route path="/onboarding" element={<OnboardingPage />} />
+
+                {/* Todas las rutas protegidas */}
+                <Route 
+                    path="/" 
+                    element={<ProtectedRoute><HomePage /></ProtectedRoute>} 
+                />
 
                 {/* Calendario Electoral */}
-                <Route path="/calendar" element={<CalendarPage />} />
+                <Route path="/calendar" element={<ProtectedRoute><CalendarPage /></ProtectedRoute>} />
 
                 {/* QuickActions */}
                 <Route
                     path="/local-votacion"
-                    element={<PlaceholderPage title="Mi local de votación" />}
+                    element={<ProtectedRoute><VotingLocationPage /></ProtectedRoute>}
                 />
                 <Route
                     path="/miembro-mesa"
-                    element={<PlaceholderPage title="Miembro de Mesa" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Miembro de Mesa" /></ProtectedRoute>}
                 />
                 <Route
                     path="/info-electores"
-                    element={<PlaceholderPage title="Información para Electores" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Información para Electores" /></ProtectedRoute>}
                 />
 
                 {/* HeaderChips */}
                 <Route
                     path="/intenciones-voto"
-                    element={<PlaceholderPage title="Intenciones de Voto" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Intenciones de Voto" /></ProtectedRoute>}
                 />
                 <Route
                     path="/boca-urna"
-                    element={<PlaceholderPage title="Boca de Urna" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Boca de Urna" /></ProtectedRoute>}
                 />
 
                 {/* CandidatesSection */}
                 <Route
                     path="/candidatos/presidenciales"
-                    element={<PlaceholderPage title="Candidatos Presidenciales" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Candidatos Presidenciales" /></ProtectedRoute>}
                 />
                 <Route
                     path="/candidatos/senadores"
-                    element={<PlaceholderPage title="Senadores" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Senadores" /></ProtectedRoute>}
                 />
                 <Route
                     path="/candidatos/diputados"
-                    element={<PlaceholderPage title="Diputados" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Diputados" /></ProtectedRoute>}
                 />
                 <Route
                     path="/candidatos/parlamento-andino"
-                    element={<PlaceholderPage title="Parlamento Andino" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Parlamento Andino" /></ProtectedRoute>}
                 />
 
                 {/* Inicio de Elecciones */}
                 <Route
                     path="/inicio-elecciones"
-                    element={<PlaceholderPage title="Inicio de Elecciones" />}
+                    element={<ProtectedRoute><PlaceholderPage title="Inicio de Elecciones" /></ProtectedRoute>}
                 />
 
                 {/* Redirección profesional */}
                 <Route path="/home" element={<Navigate to="/" replace />} />
 
                 {/* Match */}
-                <Route path="/match" element={<MatchPage />} />
+                <Route path="/match" element={<ProtectedRoute><MatchPage /></ProtectedRoute>} />
 
                 {/* Manejo de 404 */}
                 <Route path="*" element={<Navigate to="/" replace />} />
