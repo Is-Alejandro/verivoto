@@ -64,20 +64,23 @@ export interface Candidate {
     "pro-tecnología",
   ];
   
-  // FUNCIONES UTILITARIAS
   const random = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)];
   const randomAge = () => 25 + Math.floor(Math.random() * 40);
   const randomAttributes = () =>
     attributesPool.sort(() => Math.random() - 0.5).slice(0, 3);
   
-  // GENERADOR DE CANDIDATOS
   export const candidatesData: Candidate[] = Array.from({ length: 80 }).map(
     (_, i) => ({
       name: `Candidato ${i + 1}`,
       party: random(parties),
       age: randomAge(),
       region: random(regions),
-      type: random(["Presidenciales", "Senadores", "Diputados"]),
+      type: random([
+        "Presidenciales",
+        "Senadores",
+        "Diputados",
+        "Parlamento Andino",
+      ]),
       proposal: random(proposals),
       attributes: randomAttributes(),
       photo: random(photoPool),
