@@ -1,10 +1,28 @@
 import { MapPin, Navigation } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LocationGirl from "../../../assets/images/LocaltionGirl.png";
 import MapModal from "./MapModal";
 
 export default function LocationCard() {
   const [isMapOpen, setIsMapOpen] = useState(false);
+  const [votingLocation, setVotingLocation] = useState<any>(null);
+
+  useEffect(() => {
+    // Obtener datos del usuario
+    const userStr = localStorage.getItem("currentUser");
+    if (userStr) {
+      const user = JSON.parse(userStr);
+      setVotingLocation(user.votingLocation);
+    }
+  }, []);
+
+  if (!votingLocation) {
+    return (
+      <div className="bg-white rounded-2xl shadow-md shadow-black/5 p-6 border border-neutral-200">
+        <p className="text-neutral-600 text-center">Cargando información...</p>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -30,10 +48,10 @@ export default function LocationCard() {
       <div className="p-5">
         {/* Nombre del local */}
         <h2 className="text-lg font-bold text-neutral-900 mb-2">
-          I.E. 2025 "Manuel Scorza"
+          {votingLocation.nombre}
         </h2>
         <p className="text-sm text-neutral-600 mb-5">
-          Av. Los Próceres 1234, Santiago de Surco, Lima
+          {votingLocation.direccion}
         </p>
 
         {/* Mesa de sufragio */}
@@ -51,7 +69,7 @@ export default function LocationCard() {
           </div>
           <div>
             <p className="text-xs text-neutral-500 mb-0.5">Mesa de sufragio</p>
-            <p className="text-base font-semibold text-neutral-900">045678</p>
+            <p className="text-base font-semibold text-neutral-900">{votingLocation.mesaSufragio}</p>
           </div>
         </div>
 
@@ -70,7 +88,9 @@ export default function LocationCard() {
           </div>
           <div>
             <p className="text-xs text-neutral-500 mb-0.5">Pabellón / Aula</p>
-            <p className="text-base font-semibold text-neutral-900">B / 201</p>
+            <p className="text-base font-semibold text-neutral-900">
+              {votingLocation.pabellon} / {votingLocation.aula}
+            </p>
           </div>
         </div>
 
@@ -85,7 +105,11 @@ export default function LocationCard() {
       </div>
     </div>
 
-    <MapModal isOpen={isMapOpen} onClose={() => setIsMapOpen(false)} />
+    <MapModal 
+      isOpen={isMapOpen} 
+      onClose={() => setIsMapOpen(false)}
+      votingLocation={votingLocation}
+    />
     </>
   );
 }

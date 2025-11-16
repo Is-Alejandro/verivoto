@@ -1,15 +1,8 @@
 import { useState } from "react";
-import {
-  Shield,
-  Building2,
-  GraduationCap,
-  Heart,
-  ChevronLeft,
-} from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 interface Step2Props {
   onComplete: (data: {
-    topics: string[];
     accessibility: {
       textReader: boolean;
       seniorMode: boolean;
@@ -20,31 +13,14 @@ interface Step2Props {
   onBack: () => void;
 }
 
-const TOPICS = [
-  { id: "security", label: "Seguridad", icon: Shield },
-  { id: "economy", label: "Economía", icon: Building2 },
-  { id: "education", label: "Educación", icon: GraduationCap },
-  { id: "health", label: "Salud", icon: Heart },
-];
-
 export default function Step2Preferences({ onComplete, onBack }: Step2Props) {
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [textReader, setTextReader] = useState(false);
   const [seniorMode, setSeniorMode] = useState(false);
   const [nativeLanguage, setNativeLanguage] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("");
 
-  const toggleTopic = (topicId: string) => {
-    if (selectedTopics.includes(topicId)) {
-      setSelectedTopics(selectedTopics.filter((id) => id !== topicId));
-    } else if (selectedTopics.length < 3) {
-      setSelectedTopics([...selectedTopics, topicId]);
-    }
-  };
-
   const handleComplete = () => {
     onComplete({
-      topics: selectedTopics,
       accessibility: {
         textReader,
         seniorMode,
@@ -71,60 +47,6 @@ export default function Step2Preferences({ onComplete, onBack }: Step2Props) {
 
       {/* Contenido scrolleable */}
       <div className="flex-1 overflow-y-auto px-6 py-6 pb-32">
-        {/* Temas prioritarios */}
-        <div className="mb-8">
-          <h2 className="font-bold text-neutral-900 mb-2">
-            ¿Qué temas te importan más?
-          </h2>
-          <p className="text-sm text-neutral-600 mb-4">
-            Selecciona hasta 3 temas prioritarios.
-          </p>
-
-          <div className="grid grid-cols-2 gap-3">
-            {TOPICS.map((topic) => {
-              const Icon = topic.icon;
-              const isSelected = selectedTopics.includes(topic.id);
-
-              return (
-                <button
-                  key={topic.id}
-                  onClick={() => toggleTopic(topic.id)}
-                  disabled={
-                    !isSelected && selectedTopics.length >= 3
-                  }
-                  className={`
-                    flex flex-col items-center gap-3 p-5 rounded-xl border-2 transition
-                    ${
-                      isSelected
-                        ? "border-blue-600 bg-blue-50"
-                        : "border-neutral-200 bg-white hover:border-neutral-300"
-                    }
-                    ${
-                      !isSelected && selectedTopics.length >= 3
-                        ? "opacity-50 cursor-not-allowed"
-                        : ""
-                    }
-                  `}
-                >
-                  <Icon
-                    size={32}
-                    className={
-                      isSelected ? "text-blue-600" : "text-neutral-700"
-                    }
-                  />
-                  <span
-                    className={`font-medium text-sm ${
-                      isSelected ? "text-blue-600" : "text-neutral-900"
-                    }`}
-                  >
-                    {topic.label}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
         {/* Modo Inclusivo */}
         <div className="bg-neutral-50 rounded-2xl p-5 mb-6">
           <h2 className="font-bold text-neutral-900 mb-2">Modo Inclusivo</h2>

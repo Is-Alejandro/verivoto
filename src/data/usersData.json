@@ -1,0 +1,138 @@
+[
+  {
+    "dni": "12345678",
+    "nombre": "Mauro",
+    "apellidos": "Lázaro Pérez",
+    "edad": 28,
+    "hasCompletedOnboarding": true,
+    "isMesaMember": true,
+    "votingLocation": {
+      "nombre": "I.E. 2025 \"Manuel Scorza\"",
+      "direccion": "Av. Los Próceres 1234, Santiago de Surco, Lima",
+      "mesaSufragio": "045678",
+      "pabellon": "B",
+      "aula": "201",
+      "coordenadas": {
+        "lat": -12.1391,
+        "lng": -76.9956
+      }
+    },
+    "mesaInfo": {
+      "numero": "045678",
+      "rol": "Presidente de Mesa",
+      "horario": "7:00 AM - 7:00 PM",
+      "capacitaciones": [
+        {
+          "fecha": "2025-12-05",
+          "horario": "9:00 AM - 12:00 PM",
+          "modalidad": "Presencial",
+          "lugar": "ODPE Santiago de Surco - Av. Primavera 1050"
+        },
+        {
+          "fecha": "2025-12-12",
+          "horario": "3:00 PM - 6:00 PM",
+          "modalidad": "Virtual",
+          "lugar": "Plataforma Zoom (link enviado por correo)"
+        }
+      ]
+    }
+  },
+  {
+    "dni": "87654321",
+    "nombre": "Ana",
+    "apellidos": "García Rodríguez",
+    "edad": 32,
+    "hasCompletedOnboarding": false,
+    "isMesaMember": false,
+    "votingLocation": {
+      "nombre": "Colegio San Martín de Porres",
+      "direccion": "Jr. Los Pinos 567, Miraflores, Lima",
+      "mesaSufragio": "023456",
+      "pabellon": "A",
+      "aula": "105",
+      "coordenadas": {
+        "lat": -12.1192,
+        "lng": -77.0350
+      }
+    },
+    "mesaInfo": null
+  },
+  {
+    "dni": "45678912",
+    "nombre": "Carlos",
+    "apellidos": "Mendoza Silva",
+    "edad": 45,
+    "hasCompletedOnboarding": true,
+    "isMesaMember": false,
+    "votingLocation": {
+      "nombre": "Universidad Nacional Mayor de San Marcos",
+      "direccion": "Av. Universitaria s/n, Lima Cercado",
+      "mesaSufragio": "078912",
+      "pabellon": "C",
+      "aula": "304",
+      "coordenadas": {
+        "lat": -12.0565,
+        "lng": -77.0844
+      }
+    },
+    "mesaInfo": null
+  },
+  {
+    "dni": "78945612",
+    "nombre": "María",
+    "apellidos": "Torres Vega",
+    "edad": 23,
+    "hasCompletedOnboarding": false,
+    "isMesaMember": true,
+    "votingLocation": {
+      "nombre": "I.E. Nuestra Señora de Guadalupe",
+      "direccion": "Jr. Huancavelica 453, Cercado de Lima",
+      "mesaSufragio": "012345",
+      "pabellon": "D",
+      "aula": "210",
+      "coordenadas": {
+        "lat": -12.0464,
+        "lng": -77.0428
+      }
+    },
+    "mesaInfo": {
+      "numero": "012345",
+      "rol": "Secretario de Mesa",
+      "horario": "7:00 AM - 7:00 PM",
+      "capacitaciones": [
+        {
+          "fecha": "2025-12-06",
+          "horario": "10:00 AM - 1:00 PM",
+          "modalidad": "Presencial",
+          "lugar": "ODPE Lima Cercado - Jr. Carabaya 885"
+        },
+        {
+          "fecha": "2025-12-13",
+          "horario": "4:00 PM - 7:00 PM",
+          "modalidad": "Virtual",
+          "lugar": "Plataforma Zoom (link enviado por correo)"
+        }
+      ]
+    }
+  },
+  {
+    "dni": "11111111",
+    "nombre": "Demo",
+    "apellidos": "Usuario Test",
+    "edad": 30,
+    "hasCompletedOnboarding": false,
+    "isMesaMember": false,
+    "votingLocation": {
+      "nombre": "I.E. 2025 \"Manuel Scorza\"",
+      "direccion": "Av. Los Próceres 1234, Santiago de Surco, Lima",
+      "mesaSufragio": "045678",
+      "pabellon": "B",
+      "aula": "201",
+      "coordenadas": {
+        "lat": -12.1391,
+        "lng": -76.9956
+      }
+    },
+    "mesaInfo": null
+  }
+]

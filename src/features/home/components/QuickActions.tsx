@@ -1,8 +1,18 @@
 import { MapPin, Users, Info } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function QuickActions() {
   const navigate = useNavigate();
+  const [isMesaMember, setIsMesaMember] = useState(false);
+
+  useEffect(() => {
+    const userStr = localStorage.getItem("currentUser");
+    if (userStr) {
+      const user = JSON.parse(userStr);
+      setIsMesaMember(user.isMesaMember || false);
+    }
+  }, []);
 
   return (
     <div className="bg-white rounded-2xl shadow-md shadow-black/5 mt-6 border border-neutral-200">
@@ -23,11 +33,18 @@ export default function QuickActions() {
 
         {/* Miembro de mesa */}
         <button
-          onClick={() => navigate("/miembro-mesa")}
-          className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition"
+          onClick={() => isMesaMember && navigate("/miembro-mesa")}
+          disabled={!isMesaMember}
+          className={`flex items-center gap-3 p-4 text-sm w-full transition ${
+            isMesaMember
+              ? "text-neutral-800 hover:bg-neutral-50 active:bg-neutral-100 cursor-pointer"
+              : "text-neutral-400 cursor-not-allowed opacity-60"
+          }`}
         >
-          <div className="bg-purple-50 p-2 rounded-lg">
-            <Users size={18} className="text-purple-600" />
+          <div className={`p-2 rounded-lg ${
+            isMesaMember ? "bg-purple-50" : "bg-neutral-100"
+          }`}>
+            <Users size={18} className={isMesaMember ? "text-purple-600" : "text-neutral-400"} />
           </div>
           <span className="font-medium">Miembro de Mesa</span>
         </button>

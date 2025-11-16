@@ -1,17 +1,40 @@
 import { useState } from "react";
 import VeriVotoBanner from "../../../assets/images/VeriVotoBanner.png";
+import usersData from "../../../data/usersData.json";
 
 interface Step1Props {
-  onComplete: (data: { dni: string; age: string }) => void;
+  onComplete: (data: { dni: string; age: string; userData: any }) => void;
 }
 
 export default function Step1Welcome({ onComplete }: Step1Props) {
   const [dni, setDni] = useState("");
-  const [manualLocation, setManualLocation] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (dni.length === 8) {
-      onComplete({ dni, age: "" });
+      setLoading(true);
+      setError("");
+
+      // Simular delay de API
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
+      // Buscar usuario en la base de datos
+      const user = usersData.find((u) => u.dni === dni);
+
+      if (user) {
+        // Guardar datos del usuario en localStorage
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        
+        onComplete({ 
+          dni, 
+          age: user.edad.toString(), 
+          userData: user 
+        });
+      } else {
+        setError("DNI no encontrado. Por favor verifica el número ingresado.");
+        setLoading(false);
+      }
     }
   };
 
@@ -28,10 +51,12 @@ export default function Step1Welcome({ onComplete }: Step1Props) {
 
       {/* Contenido */}
       <div className="flex-1 bg-white rounded-t-3xl -mt-6 px-6 py-8">
-        <h1 className="text-2xl font-bold text-neutral-900 mb-2">
+        <h1 className="text-2xl font-bold text-neutral-900 mt-2">
           Bienvenido(a) a
         </h1>
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4" style={{
+          color: '#103569'
+        }}>
           VeriVoto
         </h2>
 
@@ -58,29 +83,33 @@ export default function Step1Welcome({ onComplete }: Step1Props) {
             placeholder="Ingresa los 8 dígitos"
             maxLength={8}
             value={dni}
-            onChange={(e) => setDni(e.target.value.replace(/\D/g, ""))}
-            className="w-full px-4 py-3 border border-neutral-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onChange={(e) => {
+              setDni(e.target.value.replace(/\D/g, ""));
+              setError("");
+            }}
+            className={`w-full px-4 py-3 border ${
+              error ? "border-red-500" : "border-neutral-300"
+            } rounded-lg mb-3 focus:outline-none focus:ring-2 ${
+              error ? "focus:ring-red-500" : "focus:ring-blue-500"
+            }`}
           />
 
-          <button
-            onClick={() => setManualLocation(!manualLocation)}
-            className="text-blue-600 text-sm font-medium hover:underline"
-          >
-            Seleccionar manualmente
-          </button>
+          {error && (
+            <p className="text-red-600 text-sm mb-3">{error}</p>
+          )}
+
+          <p className="text-xs text-neutral-500">
+            DNIs de ejemplo (8 dígitos): 12345678, 87654321, 45678912, 78945612, 11111111
+          </p>
         </div>
 
         {/* Botón Continuar */}
         <button
           onClick={handleContinue}
-          disabled={dni.length !== 8}
+          disabled={dni.length !== 8 || loading}
           className="w-full bg-red-600 hover:bg-red-700 disabled:bg-neutral-300 disabled:cursor-not-allowed text-white font-semibold py-4 rounded-xl transition"
         >
-          Continuar
-        </button>
-
-        <button className="w-full text-neutral-600 text-sm mt-4 hover:underline">
-          Omitir por ahora
+          {loading ? "Validando..." : "Continuar"}
         </button>
       </div>
     </div>

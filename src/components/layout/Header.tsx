@@ -4,8 +4,18 @@ import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const [userName, setUserName] = useState("Usuario");
   const menuRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+
+  // Obtener nombre del usuario
+  useEffect(() => {
+    const userStr = localStorage.getItem("currentUser");
+    if (userStr) {
+      const user = JSON.parse(userStr);
+      setUserName(`${user.nombre} ${user.apellidos}`);
+    }
+  }, []);
 
   // Cerrar menú al hacer clic fuera
   useEffect(() => {
@@ -28,6 +38,10 @@ export default function Header() {
     // Limpiar localStorage
     localStorage.removeItem("onboardingCompleted");
     localStorage.removeItem("userPreferences");
+    localStorage.removeItem("currentUser");
+    
+    // Limpiar sessionStorage (para que el modal vuelva a aparecer en el próximo inicio de sesión)
+    sessionStorage.clear();
     
     // Redirigir al onboarding
     navigate("/onboarding");
@@ -47,7 +61,7 @@ export default function Header() {
 
           <div className="flex flex-col leading-tight">
             <span className="text-neutral-700 font-medium text-base">
-              Mauro Lázaro
+              {userName}
             </span>
           </div>
         </button>
@@ -78,9 +92,13 @@ export default function Header() {
           <Accessibility size={20} />
         </div>
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Info Icon*/}
+        <button 
+          onClick={() => navigate("/app-guide")}
+          className="flex flex-col items-center text-xs hover:text-blue-600 transition cursor-pointer"
+        >
           <Info size={20} />
-        </div>
+        </button>
 
         <div className="flex flex-col items-center text-xs">
           <Bell size={20} />

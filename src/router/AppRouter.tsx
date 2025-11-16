@@ -7,6 +7,11 @@ import CalendarPage from "../features/calendar/CalendarPage";
 import MatchPage from "../features/match/MatchPage";
 import VotingLocationPage from "../features/voting-location/VotingLocationPage";
 import OnboardingPage from "../features/onboarding/OnboardingPage";
+import MesaMemberPage from "../features/mesa-member/MesaMemberPage";
+import IntencionesVotoPage from "../features/intenciones-voto/IntencionesVotoPage";
+import EncuestaResultsPage from "../features/intenciones-voto/EncuestaResultsPage";
+import BocaUrnaPage from "../features/boca-urna/BocaUrnaPage";
+import AppGuidePage from "../features/app-guide/AppGuidePage";
 
 // Layout global
 import Layout from "../components/layout/Layout";
@@ -56,13 +61,39 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 }
 
 export default function AppRouter() {
+    const [isOnboardingCompleted, setIsOnboardingCompleted] = useState(
+        localStorage.getItem("onboardingCompleted") === "true"
+    );
+
+    useEffect(() => {
+        const checkOnboarding = () => {
+            setIsOnboardingCompleted(localStorage.getItem("onboardingCompleted") === "true");
+        };
+
+        // Escuchar cambios en localStorage
+        window.addEventListener("storage", checkOnboarding);
+        
+        // Revisar cuando se actualiza el componente
+        const interval = setInterval(checkOnboarding, 500);
+        
+        return () => {
+            window.removeEventListener("storage", checkOnboarding);
+            clearInterval(interval);
+        };
+    }, []);
 
     return (
         <BrowserRouter>
             <Routes>
 
-                {/* Onboarding */}
-                <Route path="/onboarding" element={<OnboardingPage />} />
+                {/* Onboarding - redirige al home si ya está completado */}
+                <Route 
+                    path="/onboarding" 
+                    element={isOnboardingCompleted ? <Navigate to="/" replace /> : <OnboardingPage />} 
+                />
+
+                {/* Guía de la Aplicación */}
+                <Route path="/app-guide" element={<AppGuidePage />} />
 
                 {/* Todas las rutas protegidas */}
                 <Route 
@@ -80,7 +111,7 @@ export default function AppRouter() {
                 />
                 <Route
                     path="/miembro-mesa"
-                    element={<ProtectedRoute><PlaceholderPage title="Miembro de Mesa" /></ProtectedRoute>}
+                    element={<ProtectedRoute><MesaMemberPage /></ProtectedRoute>}
                 />
                 <Route
                     path="/info-electores"
@@ -90,11 +121,15 @@ export default function AppRouter() {
                 {/* HeaderChips */}
                 <Route
                     path="/intenciones-voto"
-                    element={<ProtectedRoute><PlaceholderPage title="Intenciones de Voto" /></ProtectedRoute>}
+                    element={<ProtectedRoute><IntencionesVotoPage /></ProtectedRoute>}
+                />
+                <Route
+                    path="/intenciones-voto/:encuestaId"
+                    element={<ProtectedRoute><EncuestaResultsPage /></ProtectedRoute>}
                 />
                 <Route
                     path="/boca-urna"
-                    element={<ProtectedRoute><PlaceholderPage title="Boca de Urna" /></ProtectedRoute>}
+                    element={<ProtectedRoute><BocaUrnaPage /></ProtectedRoute>}
                 />
 
                 {/* CandidatesSection */}

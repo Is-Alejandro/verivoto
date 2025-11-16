@@ -89,11 +89,12 @@ function MapController({ center, zoomDelta }: { center: [number, number] | null;
 interface MapModalProps {
   isOpen: boolean;
   onClose: () => void;
+  votingLocation: any;
 }
 
-export default function MapModal({ isOpen, onClose }: MapModalProps) {
-  // Coordenadas de ejemplo (Lima, Perú - Santiago de Surco)
-  const destination = { lat: -12.1391, lng: -76.9956 }; // Local de votación
+export default function MapModal({ isOpen, onClose, votingLocation }: MapModalProps) {
+  // Coordenadas del local de votación del usuario
+  const destination = votingLocation?.coordenadas || { lat: -12.1391, lng: -76.9956 };
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [mapCenter, setMapCenter] = useState<[number, number] | null>(null);
   const [routePath, setRoutePath] = useState<[number, number][]>([]);
@@ -310,10 +311,10 @@ export default function MapModal({ isOpen, onClose }: MapModalProps) {
       {/* Card de información inferior */}
       <div className="absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-2xl p-6 z-[1000]">
         <h2 className="text-xl font-bold text-neutral-900 mb-2">
-          I.E. 2025 "Manuel Scorza"
+          {votingLocation?.nombre || "Local de Votación"}
         </h2>
         <p className="text-sm text-neutral-600 mb-4">
-          Av. Los Próceres 1234, Surco
+          {votingLocation?.direccion || "Dirección no disponible"}
         </p>
 
         {/* Tiempo y distancia */}
