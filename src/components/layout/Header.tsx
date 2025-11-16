@@ -1,6 +1,10 @@
 import { UserCircle, Lamp, Accessibility, Info, Bell } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+
+  const navigate = useNavigate();
+
   return (
     <header className="h-[65px] w-full bg-white shadow-sm px-4 flex items-center justify-between sticky top-0 z-30">
       
@@ -18,20 +22,27 @@ export default function Header() {
       {/* Parte derecha: íconos */}
       <div className="flex items-center gap-5 text-neutral-600">
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Aprende */}
+        <div
+          className="flex flex-col items-center text-xs cursor-pointer"
+          onClick={() => navigate("/aprende")}
+        >
           <Lamp size={20} />
           <span className="hidden sm:block">Aprende</span>
         </div>
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Accesibilidad */}
+        <div className="flex flex-col items-center text-xs cursor-pointer">
           <Accessibility size={20} />
         </div>
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Info */}
+        <div className="flex flex-col items-center text-xs cursor-pointer">
           <Info size={20} />
         </div>
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Notificaciones */}
+        <div className="flex flex-col items-center text-xs cursor-pointer">
           <Bell size={20} />
         </div>
 

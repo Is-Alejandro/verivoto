@@ -1,7 +1,11 @@
 import { ArrowLeft, Box, HelpCircle } from "lucide-react";
 import InfoCard from "./components/InfoCard";
+import { useNavigate } from "react-router-dom";
 
 export default function InfoElectoresPage() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-[#F5F7FB] pb-24"> 
       
@@ -37,7 +41,7 @@ export default function InfoElectoresPage() {
           icon={<HelpCircle size={26} className="text-yellow-700" />}
           backgroundColor="#FCE58F"
           buttonLabel="Ir a los Quizzes"
-          onClick={() => console.log("Ir a quizzes")}
+          onClick={() => navigate("/aprende")}
         />
 
         {/* CARD 3 — Practica tu voto */}
