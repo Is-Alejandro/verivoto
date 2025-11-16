@@ -4,7 +4,9 @@ interface MatchCandidateCardProps {
   age: number;
   proposal: string;
   photo?: string;
-  match?: number; 
+  match?: number;
+  attrMatches?: number;
+  chipMatches?: number;
 }
 
 export default function MatchCandidateCard({
@@ -14,9 +16,10 @@ export default function MatchCandidateCard({
   proposal,
   photo,
   match = 0,
+  attrMatches = 0,
+  chipMatches = 0,
 }: MatchCandidateCardProps) {
 
-  // 🎨 Color dinámico según porcentaje
   const getMatchColor = () => {
     if (match >= 80) return "bg-green-500";
     if (match >= 40) return "bg-yellow-500";
@@ -26,11 +29,13 @@ export default function MatchCandidateCard({
   return (
     <div
       className="
-        bg-white p-4 rounded-xl shadow-sm 
+        bg-white p-4 rounded-xl shadow-sm
         border border-neutral-200
         active:scale-[0.98] transition
       "
     >
+
+      {/* CONTENIDO PRINCIPAL */}
       <div className="flex gap-4">
         
         {/* Foto */}
@@ -44,13 +49,11 @@ export default function MatchCandidateCard({
 
         {/* Info */}
         <div className="flex-1">
-          
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-neutral-900 leading-tight">
               {name}
             </h3>
 
-            {/* Badge pequeño */}
             <span
               className="
                 text-[11px] px-2 py-1 rounded-full 
@@ -65,16 +68,21 @@ export default function MatchCandidateCard({
             {party} | Edad: {age}
           </p>
 
-          <p className="text-[11px] text-neutral-500 mt-2 mb-1">
-            Compatibilidad:
-          </p>
-
           {/* Barra dinámica */}
-          <div className="w-full bg-neutral-200 rounded-full h-2 overflow-hidden">
-            <div
-              className={`h-full transition-all duration-300 ${getMatchColor()}`}
-              style={{ width: `${match}%` }}
-            />
+          <div className="mt-2">
+            <div className="w-full bg-neutral-200 rounded-full h-2 overflow-hidden">
+              <div
+                className={`h-full transition-all duration-300 ${getMatchColor()}`}
+                style={{ width: `${match}%` }}
+              />
+            </div>
+          </div>
+
+          {/* Explicación */}
+          <div className="mt-2 text-[11px] text-neutral-600 leading-tight">
+            <span className="font-semibold">Coincidencias:</span><br />
+            • {attrMatches} atributos<br />
+            • {chipMatches} temáticas
           </div>
 
           <p className="text-sm mt-3 leading-snug text-neutral-700">
@@ -82,8 +90,24 @@ export default function MatchCandidateCard({
             {proposal}
           </p>
         </div>
-
       </div>
+
+      {/* FOOTER CON BOTÓN */}
+      <div className="flex justify-end mt-3">
+        <button
+          onClick={() => console.log("Ver más detalles de:", name)}
+          className="
+            text-[11px] px-3 py-1
+            rounded-md bg-blue-50 text-blue-700
+            hover:bg-blue-100
+            active:scale-95 transition
+            shadow-sm
+          "
+        >
+          Ver más →
+        </button>
+      </div>
+
     </div>
   );
 }

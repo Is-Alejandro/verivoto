@@ -6,7 +6,11 @@ interface Candidate {
   age: number;
   proposal: string;
   photo?: string;
-  match?: number;  // <-- importante
+
+  // NUEVO
+  match?: number;
+  attrMatches?: number;
+  chipMatches?: number;
 }
 
 interface MatchCandidatesListProps {
@@ -28,7 +32,9 @@ export default function MatchCandidatesList({
             age={candidate.age}
             proposal={candidate.proposal}
             photo={candidate.photo}
-            match={candidate.match}   // <-- AQUÍ ESTABA EL ERROR
+            match={candidate.match}
+            attrMatches={candidate.attrMatches}
+            chipMatches={candidate.chipMatches}
           />
         ))
       ) : (
