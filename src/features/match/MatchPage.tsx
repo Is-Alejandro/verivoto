@@ -1,18 +1,12 @@
 import Layout from "../../components/layout/Layout";
+import MatchTitle from "./components/MatchTitle";
 
 export default function MatchPage() {
     return (
         <Layout>
             <div className="p-5 pb-20">
 
-                {/* Título */}
-                <h1 className="text-2xl font-bold text-neutral-900 flex items-center gap-2">
-                    ⚡ Match Político
-                </h1>
-
-                <p className="text-neutral-600 text-[15px] mt-1">
-                    Búsqueda con IA para encontrar a los candidatos que te representen.
-                </p>
+                <MatchTitle />
 
                 {/* Barra de búsqueda */}
                 <div className="mt-4 flex">
