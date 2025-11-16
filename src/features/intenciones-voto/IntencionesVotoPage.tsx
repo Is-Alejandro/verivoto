@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import { encuestasData } from "./data/encuestasData";
 import { ChevronLeft, ChevronRight, BarChart3 } from "lucide-react";
 
@@ -7,7 +6,7 @@ export default function IntencionesVotoPage() {
   const navigate = useNavigate();
 
   return (
-    <Layout>
+    <div className="min-h-screen bg-white pb-24">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6 -mt-2">
         <button
@@ -80,6 +79,6 @@ export default function IntencionesVotoPage() {
           </button>
         ))}
       </div>
-    </Layout>
+    </div>
   );
 }

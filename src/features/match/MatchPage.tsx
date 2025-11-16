@@ -1,5 +1,4 @@
-import { useState, useMemo } from "react";
-import Layout from "../../components/layout/Layout";
+import { useState, useRef, useMemo } from "react";
 
 import MatchTitle from "./components/MatchTitle";
 import MatchSearchBar from "./components/MatchSearchBar";
@@ -105,7 +104,7 @@ export default function MatchPage() {
     }, [search, region, type, chips, attributes]);
 
     return (
-        <Layout>
+        <div>
             <div className="p-5 pb-20">
                 <MatchTitle />
 
@@ -135,6 +134,6 @@ export default function MatchPage() {
 
                 <MatchCandidatesList candidates={filteredCandidates} />
             </div>
-        </Layout>
+        </div>
     );
 }

@@ -1,12 +1,14 @@
-import { UserCircle, Lamp, Accessibility, Info, Bell, LogOut } from "lucide-react";
+import { UserCircle, Lamp, Accessibility, Info, Globe, LogOut } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [userName, setUserName] = useState("Usuario");
   const menuRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+  const { language, setLanguage } = useLanguage();
 
   // Obtener nombre del usuario
   useEffect(() => {
@@ -40,13 +42,22 @@ export default function Header() {
     localStorage.removeItem("userPreferences");
     localStorage.removeItem("currentUser");
     
-    // Limpiar sessionStorage (para que el modal vuelva a aparecer en el próximo inicio de sesión)
+    // Limpiar sessionStorage
     sessionStorage.clear();
     
     // Redirigir al onboarding
     navigate("/onboarding");
     setShowMenu(false);
   };
+
+  // Alternar idioma: ES → EN → QU → ES...
+  const toggleLanguage = () => {
+    if (language === "es") setLanguage("en");
+    else if (language === "en") setLanguage("qu");
+    else setLanguage("es");
+  };
+
+  const languageLabel = language.toUpperCase();
 
   return (
     <header className="h-[65px] w-full bg-white shadow-sm px-4 flex items-center justify-between sticky top-0 z-30">
@@ -80,19 +91,24 @@ export default function Header() {
         )}
       </div>
 
-      {/* Parte derecha: íconos */}
+      {/* DERECHA: Iconos */}
       <div className="flex items-center gap-5 text-neutral-600">
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Aprende */}
+        <div
+          className="flex flex-col items-center text-xs cursor-pointer"
+          onClick={() => navigate("/aprende")}
+        >
           <Lamp size={20} />
           <span className="hidden sm:block">Aprende</span>
         </div>
 
-        <div className="flex flex-col items-center text-xs">
+        {/* Accesibilidad */}
+        <div className="flex flex-col items-center text-xs cursor-pointer">
           <Accessibility size={20} />
         </div>
 
-        {/* Info Icon*/}
+        {/* Info Icon - Guía de la App */}
         <button 
           onClick={() => navigate("/app-guide")}
           className="flex flex-col items-center text-xs hover:text-blue-600 transition cursor-pointer"
@@ -100,8 +116,13 @@ export default function Header() {
           <Info size={20} />
         </button>
 
-        <div className="flex flex-col items-center text-xs">
-          <Bell size={20} />
+        {/* Selector de Idioma */}
+        <div
+          className="flex flex-col items-center text-xs cursor-pointer"
+          onClick={toggleLanguage}
+        >
+          <Globe size={20} />
+          <span className="text-[11px] mt-1">{languageLabel}</span>
         </div>
 
       </div>

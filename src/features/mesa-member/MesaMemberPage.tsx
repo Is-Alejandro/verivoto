@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import MesaInfoCard from "./components/MesaInfoCard";
 import MesaMapSection from "./components/MesaMapSection";
 import ResponsibilitiesSection from "./components/ResponsibilitiesSection";
@@ -33,16 +32,14 @@ export default function MesaMemberPage() {
 
   if (loading || !userData) {
     return (
-      <Layout>
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <p className="text-neutral-500">Cargando...</p>
-        </div>
-      </Layout>
+      <div className="flex items-center justify-center min-h-[60vh]">
+        <p className="text-neutral-500">Cargando...</p>
+      </div>
     );
   }
 
   return (
-    <Layout>
+    <div className="pb-24">
       {/* Header con botón de regreso */}
       <div className="flex items-center gap-3 mb-6 -mt-2">
         <button
@@ -83,6 +80,6 @@ export default function MesaMemberPage() {
         {/* Contenido motivacional */}
         <MotivationalSection />
       </div>
-    </Layout>
+    </div>
   );
 }

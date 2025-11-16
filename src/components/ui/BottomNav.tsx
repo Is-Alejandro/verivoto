@@ -22,7 +22,7 @@ import {
       { icon: Home, label: "Inicio", path: "/" },
       { icon: CalendarDays, label: "Calendario", path: "/calendar" },
       { icon: ListChecks, label: "Match", path: "/match" },
-      { icon: ShieldCheck, label: "Verificador", path: null },  // páginas futuras
+      { icon: ShieldCheck, label: "Verificador", path: "/verificador" }
     ];
   
     return (

@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import { encuestasData } from "./data/encuestasData";
 import { ChevronLeft, Calendar, Users, AlertCircle } from "lucide-react";
 
@@ -11,23 +10,21 @@ export default function EncuestaResultsPage() {
 
   if (!encuesta) {
     return (
-      <Layout>
-        <div className="flex flex-col items-center justify-center min-h-[60vh] text-center p-6">
-          <AlertCircle size={48} className="text-neutral-400 mb-4" />
-          <h2 className="text-xl font-bold text-neutral-900 mb-2">
-            Encuesta no encontrada
-          </h2>
-          <p className="text-neutral-600 mb-6">
-            No se pudo encontrar la encuesta solicitada
-          </p>
-          <button
-            onClick={() => navigate("/intenciones-voto")}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition"
-          >
-            Volver a encuestas
-          </button>
-        </div>
-      </Layout>
+      <div className="flex flex-col items-center justify-center min-h-[60vh] text-center p-6">
+        <AlertCircle size={48} className="text-neutral-400 mb-4" />
+        <h2 className="text-xl font-bold text-neutral-900 mb-2">
+          Encuesta no encontrada
+        </h2>
+        <p className="text-neutral-600 mb-6">
+          No se pudo encontrar la encuesta solicitada
+        </p>
+        <button
+          onClick={() => navigate("/intenciones-voto")}
+          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition"
+        >
+          Volver a encuestas
+        </button>
+      </div>
     );
   }
 
@@ -39,7 +36,7 @@ export default function EncuestaResultsPage() {
   const maxPorcentaje = Math.max(...candidatosOrdenados.map((c) => c.porcentaje));
 
   return (
-    <Layout>
+    <div className="min-h-screen bg-white pb-24">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6 -mt-2">
         <button
@@ -159,6 +156,6 @@ export default function EncuestaResultsPage() {
           La intención de voto no garantiza el resultado final de las elecciones.
         </p>
       </div>
-    </Layout>
+    </div>
   );
 }

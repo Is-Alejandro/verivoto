@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from "../../components/layout/Layout";
 import UpcomingEventsCarousel from "./components/UpcomingEventsCarousel";
 import CalendarMonth from "./components/CalendarMonth";
 import MonthEventsList from "./components/MonthEventList";
@@ -8,7 +7,7 @@ export default function CalendarPage() {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
 
   return (
-    <Layout>
+    <div>
       <div className="mt-2">
         
         {/* Carrusel de Próximos Eventos */}
@@ -24,6 +23,6 @@ export default function CalendarPage() {
         <MonthEventsList selectedDate={selectedDate} />
 
       </div>
-    </Layout>
+    </div>
   );
 }

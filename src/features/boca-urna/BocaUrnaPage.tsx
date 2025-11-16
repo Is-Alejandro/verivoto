@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import { bocaUrnaData } from "./data/bocaUrnaData";
 import { ChevronLeft, RefreshCw, Clock, FileText, TrendingUp, AlertCircle } from "lucide-react";
 
@@ -57,7 +56,7 @@ export default function BocaUrnaPage() {
   };
 
   return (
-    <Layout>
+    <div className="min-h-screen bg-white pb-24">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6 mt-2">
         <button
@@ -238,6 +237,6 @@ export default function BocaUrnaPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   );
 }
