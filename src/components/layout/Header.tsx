@@ -1,38 +1,41 @@
-import { Bell, Info, Accessibility, Lightbulb } from "lucide-react";
+import { UserCircle, Lamp, Accessibility, Info, Bell } from "lucide-react";
 
-interface HeaderProps {
-  name: string;
-}
-
-export default function Header({ name }: HeaderProps) {
+export default function Header() {
   return (
-    <header className="h-[60px] w-full bg-white shadow-sm flex items-center justify-between px-4 sticky top-0 z-50">
+    <header className="h-[65px] w-full bg-white shadow-sm px-4 flex items-center justify-between sticky top-0 z-30">
       
-      {/* Usuario */}
+      {/* Parte izquierda: Avatar + Nombre */}
       <div className="flex items-center gap-3">
-        <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
-          <span className="text-gray-600 font-semibold text-sm">
-            {name?.charAt(0).toUpperCase()}
+        <UserCircle size={38} className="text-neutral-700" />
+
+        <div className="flex flex-col leading-tight">
+          <span className="text-neutral-700 font-medium text-base">
+            Mauro Lázaro
           </span>
         </div>
-
-        <p className="font-medium text-gray-800 text-sm">
-          {name}
-        </p>
       </div>
 
-      {/* Iconos de acciones */}
-      <div className="flex items-center gap-5 text-gray-600">
+      {/* Parte derecha: íconos */}
+      <div className="flex items-center gap-5 text-neutral-600">
+
         <div className="flex flex-col items-center text-xs">
-          <Lightbulb size={20} strokeWidth={1.6} className="text-yellow-400" />
-          <span className="text-[10px] text-gray-500">Aprende</span>
+          <Lamp size={20} />
+          <span className="hidden sm:block">Aprende</span>
         </div>
 
-        <Accessibility size={22} strokeWidth={1.7} />
-        <Info size={22} strokeWidth={1.7} />
-        <Bell size={22} strokeWidth={1.7} />
-      </div>
+        <div className="flex flex-col items-center text-xs">
+          <Accessibility size={20} />
+        </div>
 
+        <div className="flex flex-col items-center text-xs">
+          <Info size={20} />
+        </div>
+
+        <div className="flex flex-col items-center text-xs">
+          <Bell size={20} />
+        </div>
+
+      </div>
     </header>
   );
 }
