@@ -9,7 +9,7 @@ import MatchAttributes from "./components/MatchAttributes";
 import MatchResultsCount from "./components/MatchResultsCount";
 import MatchCandidatesList from "./components/MatchCandidatesList";
 
-// Dataset inicial (temporal)
+// Dataset inicial con atributos
 const candidatesData = [
   {
     name: "Luis Quispe",
@@ -18,6 +18,7 @@ const candidatesData = [
     region: "Áncash",
     type: "Presidenciales",
     proposal: "Mejorar el sistema de salud en zonas rurales.",
+    attributes: ["experiencia política", "estudios completos"],
   },
   {
     name: "Ana Flores",
@@ -26,6 +27,7 @@ const candidatesData = [
     region: "Lima",
     type: "Presidenciales",
     proposal: "Incentivos para tecnología minera sostenible.",
+    attributes: ["menor de 30", "estudios completos"],
   },
 ];
 
@@ -42,7 +44,14 @@ export default function MatchPage() {
     { label: "animales", active: true },
   ]);
 
-  // Función para activar/desactivar chips
+  // Estado para atributos seleccionados
+  const [attributes, setAttributes] = useState([
+    { label: "menor de 30", active: false },
+    { label: "estudios completos", active: false },
+    { label: "experiencia política", active: false },
+  ]);
+
+  // Toggle de chips
   const toggleChip = (label: string) => {
     setChips((prev) =>
       prev.map((chip) =>
@@ -53,30 +62,73 @@ export default function MatchPage() {
     );
   };
 
-  // Filtrado final (búsqueda + región + tipo + chips)
+  // Toggle de atributos
+  const toggleAttribute = (label: string) => {
+    setAttributes((prev) =>
+      prev.map((attr) =>
+        attr.label === label
+          ? { ...attr, active: !attr.active }
+          : attr
+      )
+    );
+  };
+
+  // Lógica completa con ranking
   const filteredCandidates = useMemo(() => {
     const activeChips = chips
       .filter((c) => c.active)
       .map((c) => c.label.toLowerCase());
 
-    return candidatesData.filter((c) => {
-      const matchesSearch =
-        search === "" ||
-        c.name.toLowerCase().includes(search.toLowerCase()) ||
-        c.party.toLowerCase().includes(search.toLowerCase());
+    const activeAttributes = attributes
+      .filter((a) => a.active)
+      .map((a) => a.label.toLowerCase());
 
-      const matchesRegion = c.region === region;
-      const matchesType = c.type === type;
+    return candidatesData
+      .map((c) => {
+        // Filtros básicos
+        const matchesSearch =
+          search === "" ||
+          c.name.toLowerCase().includes(search.toLowerCase()) ||
+          c.party.toLowerCase().includes(search.toLowerCase());
 
-      const matchesChips =
-        activeChips.length === 0 ||
-        activeChips.some((topic) =>
-          c.proposal.toLowerCase().includes(topic)
-        );
+        const matchesRegion = c.region === region;
+        const matchesType = c.type === type;
 
-      return matchesSearch && matchesRegion && matchesType && matchesChips;
-    });
-  }, [search, region, type, chips]);
+        const matchesChips =
+          activeChips.length === 0 ||
+          activeChips.some((topic) =>
+            c.proposal.toLowerCase().includes(topic)
+          );
+
+        // Cálculo de match % por atributos
+        const candidateAttrs = c.attributes.map((a) => a.toLowerCase());
+
+        const matchesCount = activeAttributes.filter((attr) =>
+          candidateAttrs.includes(attr)
+        ).length;
+
+        const matchPercentage =
+          activeAttributes.length > 0
+            ? Math.round((matchesCount / activeAttributes.length) * 100)
+            : 0;
+
+        return {
+          ...c,
+          matchesSearch,
+          matchesRegion,
+          matchesType,
+          matchesChips,
+          match: matchPercentage,
+        };
+      })
+      .filter((c) =>
+        c.matchesSearch &&
+        c.matchesRegion &&
+        c.matchesType &&
+        c.matchesChips
+      )
+      .sort((a, b) => b.match - a.match); // orden por match desc
+  }, [search, region, type, chips, attributes]);
 
   return (
     <Layout>
@@ -84,14 +136,11 @@ export default function MatchPage() {
 
         <MatchTitle />
 
-        {/* Búsqueda */}
         <MatchSearchBar
           value={search}
           onChange={(value) => setSearch(value)}
-          onSearch={() => console.log("Buscar:", search)}
         />
 
-        {/* Filtros principales */}
         <MatchFiltersMain
           region={region}
           type={type}
@@ -99,18 +148,16 @@ export default function MatchPage() {
           onTypeChange={(value) => setType(value)}
         />
 
-        {/* Chips conectados */}
         <MatchChips chips={chips} onToggle={toggleChip} />
 
-        {/* Atributos (pronto se conectará con match ranking) */}
-        <MatchAttributes />
+        <MatchAttributes
+          attributes={attributes}
+          onToggle={toggleAttribute}
+        />
 
-        {/* Contador dinámico */}
         <MatchResultsCount count={filteredCandidates.length} />
 
-        {/* Lista filtrada */}
         <MatchCandidatesList candidates={filteredCandidates} />
-
       </div>
     </Layout>
   );
