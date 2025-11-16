@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Importaremos las páginas más adelante
+// Pages
 import HomePage from "../features/home/HomePage";
+import CalendarPage from "../features/calendar/CalendarPage";
+
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Ruta principal */}
+        {/* Home */}
         <Route path="/" element={<HomePage />} />
 
-        {/* Aquí agregaremos todas las demás páginas */}
+        {/* Calendario */}
+        <Route path="/calendar" element={<CalendarPage />} />
       </Routes>
     </BrowserRouter>
   );
