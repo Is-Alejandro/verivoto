@@ -6,29 +6,30 @@ import QuickActions from "./components/QuickActions";
 import CandidatesSection from "./components/CandidatesSection";
 
 export default function HomePage() {
-  return (
-    <Layout>
-      <div className="mt-2">
-        
-        {/* Greeting */}
-        <h1 className="text-2xl font-semibold text-neutral-800">
-          Hola, Mauro 👋
-        </h1>
-        <p className="text-neutral-500 text-sm mt-1">
-          ¿Listo para informarte y participar mejor?
-        </p>
+    return (
+        <Layout>
+            <div className="mt-2">
+                {/* Greeting Mejorado */}
+                <h1 className="text-3xl font-bold text-neutral-900 flex items-center gap-2 mt-2">
+                    ¡Hola!
+                    <span className="text-2xl">👋</span>
+                </h1>
 
-        <HeaderChips />
+                <p className="text-neutral-500 text-[15px] mt-2">
+                    ¿Listo para informarte y participar mejor?
+                </p>
 
-        <ElectionStartCard />
+                <HeaderChips />
 
-        <CalendarButton />
+                <ElectionStartCard />
 
-        <QuickActions />
+                <CalendarButton />
 
-        <CandidatesSection />
+                <QuickActions />
 
-      </div>
-    </Layout>
-  );
+                <CandidatesSection />
+
+            </div>
+        </Layout>
+    );
 }
