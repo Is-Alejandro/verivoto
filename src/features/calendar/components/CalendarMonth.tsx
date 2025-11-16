@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { eventsData } from "../../../data/eventsData";
 
 export default function CalendarMonth() {
     const monthName = "Abril";
@@ -10,15 +11,16 @@ export default function CalendarMonth() {
     // Abril 2026 inicia miércoles → índice 2
     const startDayIndex = 2;
 
-    // EVENTOS IMPORTANTES DEL MES
-    const monthEvents = [
-        { day: 12, type: "votacion", color: "bg-red-500" },
-        { day: 20, type: "debate", color: "bg-purple-600" },
-        { day: 6, type: "inscripcion", color: "bg-blue-600" },
-        { day: 28, type: "general", color: "bg-green-500" },
-    ];
+    // ✔ FILTRAR SOLO LOS EVENTOS DE ESTE MES (Abril 2026)
+    const monthEvents = eventsData.filter(ev => ev.date.startsWith("2026-04"));
 
-    const eventMap = new Map(monthEvents.map(ev => [ev.day, ev.color]));
+    // ✔ MAPEAR EVENTOS A SU DÍA Y COLOR
+    const eventMap = new Map(
+        monthEvents.map(ev => {
+            const day = Number(ev.date.split("-")[2]);
+            return [day, ev.color];
+        })
+    );
 
     // Días vacíos antes del día 1
     const emptyDays = Array.from({ length: startDayIndex }, () => null);
@@ -55,21 +57,20 @@ export default function CalendarMonth() {
                 ))}
             </div>
 
-
             {/* GRID DEL MES CON EVENTOS */}
             <div className="grid grid-cols-7 gap-2">
                 {calendarGrid.map((day, index) => {
-                    const hasEvent = day && eventMap.has(day);
-                    const eventColor = hasEvent ? eventMap.get(day) : null;
+                    const hasEvent = day !== null && eventMap.has(day);
+                    const eventColor = hasEvent ? eventMap.get(day!) : null;
 
                     return (
                         <div
                             key={index}
                             className={`
-                h-12 flex flex-col items-center justify-center
-                rounded-xl shadow-sm 
-                ${day ? "bg-white text-neutral-800 font-medium" : "bg-transparent"}
-              `}
+                                h-12 flex flex-col items-center justify-center
+                                rounded-xl shadow-sm 
+                                ${day ? "bg-white text-neutral-800 font-medium" : "bg-transparent"}
+                            `}
                         >
                             {day}
 

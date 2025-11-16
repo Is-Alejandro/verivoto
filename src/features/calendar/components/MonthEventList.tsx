@@ -1,36 +1,10 @@
 import MonthEventItem from "./MonthEventItem";
+import { eventsData } from "../../../data/eventsData";
 
 export default function MonthEventsList() {
-  const events = [
-    {
-      day: 12,
-      month: "ABR",
-      title: "Día de Votación",
-      subtitle: "Elecciones Generales 2026",
-      color: "bg-red-500"
-    },
-    {
-      day: 20,
-      month: "ABR",
-      title: "Debate Presidencial",
-      subtitle: "Debate Final de Candidatos",
-      color: "bg-purple-600"
-    },
-    {
-      day: 6,
-      month: "ABR",
-      title: "Cierre de Inscripciones",
-      subtitle: "Registro nacional de candidatos",
-      color: "bg-blue-600"
-    },
-    {
-      day: 28,
-      month: "ABR",
-      title: "Evento Informativo",
-      subtitle: "Jornada nacional de orientación",
-      color: "bg-green-500"
-    }
-  ];
+
+  // ✔ Filtrar eventos del mes Abril 2026
+  const events = eventsData.filter(ev => ev.date.startsWith("2026-04"));
 
   return (
     <div className="mt-8 mb-20">
@@ -39,9 +13,21 @@ export default function MonthEventsList() {
       </h2>
 
       <div className="flex flex-col gap-3">
-        {events.slice(0, 4).map((event, index) => (
-          <MonthEventItem key={index} {...event} />
-        ))}
+        {events.slice(0, 4).map((event) => {
+          const day = Number(event.date.split("-")[2]);
+          const month = "ABR"; // opcional por ahora
+
+          return (
+            <MonthEventItem
+              key={event.id}
+              day={day}
+              month={month}
+              title={event.title}
+              subtitle={event.subtitle}
+              color={event.color}
+            />
+          );
+        })}
       </div>
 
       {/* Botón de ver más */}
