@@ -2,29 +2,37 @@ import { MapPin, Users, Info } from "lucide-react";
 
 export default function QuickActions() {
   return (
-    <div className="bg-white rounded-xl shadow-sm mt-6 border border-neutral-200">
+    <div className="bg-white rounded-2xl shadow-md shadow-black/5 mt-6 border border-neutral-200">
       
-      <div className="grid grid-cols-2 border-b border-neutral-200">
+      {/* Primera fila */}
+      <div className="grid grid-cols-2 divide-x divide-neutral-200 border-b border-neutral-200">
         
-        {/* Mi local */}
-        <button className="flex items-center gap-2 p-3 text-sm text-neutral-700 active:bg-neutral-100">
-          <MapPin size={18} />
-          Mi local de votación
+        {/* Mi local de votación */}
+        <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+          <div className="bg-blue-50 p-2 rounded-lg">
+            <MapPin size={18} className="text-blue-600" />
+          </div>
+          <span className="font-medium">Mi local de votación</span>
         </button>
 
         {/* Miembro de mesa */}
-        <button className="flex items-center gap-2 p-3 text-sm text-neutral-700 border-l border-neutral-200 active:bg-neutral-100">
-          <Users size={18} />
-          Miembro de Mesa
+        <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+          <div className="bg-purple-50 p-2 rounded-lg">
+            <Users size={18} className="text-purple-600" />
+          </div>
+          <span className="font-medium">Miembro de Mesa</span>
         </button>
 
       </div>
 
       {/* Información para electores */}
-      <button className="flex items-center gap-2 p-3 text-sm text-neutral-700 w-full active:bg-neutral-100">
-        <Info size={18} />
-        Información para electores
+      <button className="flex items-center gap-3 p-4 text-sm text-neutral-800 w-full hover:bg-neutral-50 active:bg-neutral-100 transition">
+        <div className="bg-emerald-50 p-2 rounded-lg">
+          <Info size={18} className="text-emerald-600" />
+        </div>
+        <span className="font-medium">Información para electores</span>
       </button>
+
     </div>
   );
 }
