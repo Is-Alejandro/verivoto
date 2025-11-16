@@ -1,0 +1,102 @@
+[
+  {
+    "id": "AP",
+    "nombre": "Acción Popular",
+    "logo_url": "/img/partidos/Acción_Popular.svg.png",
+    "historia": "Fundado por Fernando Belaúnde Terry...",
+    "ideologia": "El Perú como Doctrina...",
+    "plan_gobierno_url": "/docs/plan_ap.pdf",
+    "candidatos": [
+      {
+        "id": "ap_pres_1",
+        "nombre": "Candidato Presidente AP",
+        "cargo": "presidente",
+        "region": "Nacional",
+        "edad": 55,
+        "propuesta_principal": "Construir más carreteras.",
+        "foto_url": "/img/candidatos/presidente.png",
+        "infogob_url": "/Politico/FichaPolitico/candidato-presidente-ap-ejemplo_historial-partidario_Q43AyhFWlVg=3h"
+      },
+      {
+        "id": "ap_dip_1",
+        "nombre": "Luis Quispe (AP)",
+        "cargo": "diputado",
+        "region": "Ancash",
+        "edad": 45,
+        "propuesta_principal": "Mejorar el sistema de riego.",
+        "foto_url": "/img/candidatos/luis_quispe.png",
+        "infogob_url": "/Politico/FichaPolitico/luis-quispe-ejemplo_historial-partidario_Q43AyhFWlVg=3h"
+      }
+    ]
+  },
+  {
+    "id": "FP",
+    "nombre": "Fuerza Popular",
+    "logo_url": "/img/partidos/Fuerza_popular.svg.png",
+    "historia": "Fuerza Popular, fundado en 2010...",
+    "ideologia": "Esta se define como un componente de populismo...",
+    "plan_gobierno_url": "/docs/FuerzaPopular.pdf",
+    "candidatos": [
+      {
+        "id": "fp_pres_1",
+        "nombre": "Keiko Fujimori",
+        "cargo": "presidente",
+        "region": "Nacional",
+        "edad": 49,
+        "propuesta_principal": "Mano dura contra la delincuencia.",
+        "foto_url": "/img/candidatos/Keiko_Fujimori_2.jpg",
+        "infogob_url": "/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h"
+      },
+      {
+        "id": "fp_dip_1",
+        "nombre": "Miguel Angel Torres Morales",
+        "cargo": "diputado",
+        "region": "Lima",
+        "edad": 42,
+        "propuesta_principal": "Fomentar la minería.",
+        "foto_url": "/img/candidatos/LopezAliaga.jpg",
+        "infogob_url": "/Politico/FichaPolitico/miguel-angel-torres-morales_historial-partidario_+Zy9@OYaRvw=yO"
+      }
+    ]
+  },
+  {
+    "id": "PL",
+    "nombre": "Perú Libre",
+    "logo_url": "/img/partidos/pl_logo.png",
+    "historia": "Partido de izquierda fundado por Vladimir Cerrón...",
+    "ideologia": "Marxismo-Leninismo-Mariateguismo...",
+    "plan_gobierno_url": "/docs/plan_pl.pdf",
+    "candidatos": [
+      {
+        "id": "pl_sen_1",
+        "nombre": "Candidato Senador PL",
+        "cargo": "senador",
+        "region": "Nacional",
+        "edad": 51,
+        "propuesta_principal": "Cambio de Constitución.",
+        "foto_url": "/img/candidatos/senador.png",
+        "infogob_url": "/Politico/FichaPolitico/candidato-senador-pl-ejemplo_historial-partidario_Q43AyhFWlVg=3h"
+      }
+    ]
+  },
+  {
+    "id": "SP",
+    "nombre": "Somos Perú",
+    "logo_url": "/img/partidos/sp_logo.png",
+    "historia": "Partido de centro fundado por Alberto Andrade...",
+    "ideologia": "Municipalismo y Descentralización...",
+    "plan_gobierno_url": "/docs/plan_sp.pdf",
+    "candidatos": [
+      {
+        "id": "sp_parla_1",
+        "nombre": "Candidato Parlamento SP",
+        "cargo": "parlamento andino",
+        "region": "Nacional",
+        "edad": 39,
+        "propuesta_principal": "Integración andina.",
+        "foto_url": "/img/candidatos/candidates.jpg",
+        "infogob_url": "/Politico/FichaPolitico/candidato-parlamento-sp-ejemplo_historial-partidario_Q43AyhFWlVg=3h"
+      }
+    ]
+  }
+]

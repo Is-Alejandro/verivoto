@@ -14,9 +14,12 @@ import InfoElectoresPage from "../features/infoElectores/InfoElectoresPage";
 import AprendeHomePage from "../features/aprende/AprendeHomePage";
 import AprendeCategoriaPage from "../features/aprende/AprendeCategoriaPage";
 
-// NUEVO: Lecciones de Votación
-import VotacionLeccionesPage from "../features/aprende/VotacionLeccionesPage";
-import VotacionLeccion1Page from "../features/aprende/VotacionLeccion1Page";
+//Candidatos
+import ListaPartidosPage from "../features/candidatos/components/ListaPartidosPage"; 
+import ListaCandidatosPage from "../features/candidatos/ListaCandidatosPage";
+import DetallePartido from "../features/candidatos/components/DetallePartido";
+import DetalleCandidatoPage from "../features/candidatos/components/DetalleCandidatoPage"; // Nueva importación
+
 
 interface PlaceholderProps {
   title: string;
@@ -27,7 +30,8 @@ function PlaceholderPage({ title }: PlaceholderProps) {
     <div className="p-6">
       <h1 className="text-2xl font-bold text-neutral-900">{title}</h1>
       <p className="mt-2 text-neutral-600 text-sm">
-        Esta pantalla aún no está desarrollada. (Pero ya tiene navegación funcional.)
+        Esta pantalla aún no está desarrollada.
+        (Pero ya tiene navegación funcional.)
       </p>
     </div>
   );
@@ -63,12 +67,6 @@ export default function AppRouter() {
           <Route path="/intenciones-voto" element={<PlaceholderPage title="Intenciones de Voto" />} />
           <Route path="/boca-urna" element={<PlaceholderPage title="Boca de Urna" />} />
 
-          {/* CandidatesSection */}
-          <Route path="/candidatos/presidenciales" element={<PlaceholderPage title="Candidatos Presidenciales" />} />
-          <Route path="/candidatos/senadores" element={<PlaceholderPage title="Senadores" />} />
-          <Route path="/candidatos/diputados" element={<PlaceholderPage title="Diputados" />} />
-          <Route path="/candidatos/parlamento-andino" element={<PlaceholderPage title="Parlamento Andino" />} />
-
           {/* Inicio de Elecciones */}
           <Route path="/inicio-elecciones" element={<PlaceholderPage title="Inicio de Elecciones" />} />
 
@@ -82,7 +80,12 @@ export default function AppRouter() {
           {/* Categorías internas */}
           <Route
             path="/aprende/votacion"
-            element={<VotacionLeccionesPage />}
+            element={
+              <AprendeCategoriaPage
+                title="¿Cómo funciona la votación?"
+                description="Aprende el proceso paso a paso."
+              />
+            }
           />
 
           <Route
@@ -116,24 +119,24 @@ export default function AppRouter() {
           />
 
           {/* ----------------------------- */}
-          {/*      LECCIONES INTERNAS      */}
+          {/*      SECCIÓN CANDIDATOS 🚀     */}
           {/* ----------------------------- */}
-
-          {/* Lección 1 de votación */}
-          <Route
-            path="/aprende/votacion/leccion-1"
-            element={<VotacionLeccion1Page />}
-          />
+          <Route path="/candidatos/:cargo" element={<ListaPartidosPage />} />
+          <Route path="/candidatos/:cargo/:partidoId" element={<ListaCandidatosPage />} />
+          <Route path="/partido/:partidoId" element={<DetallePartido />} />
+          {/* Nueva ruta para el perfil del candidato */}
+          <Route path="/candidatos/:partidoId/:candidatoId/perfil" element={<DetalleCandidatoPage />} />
 
           {/* Redirects */}
           <Route path="/home" element={<Navigate to="/" replace />} />
 
           {/* 404 */}
           <Route path="*" element={<Navigate to="/" replace />} />
-
+        
         </Route>
-
+        
       </Routes>
+      
     </BrowserRouter>
   );
 }

@@ -1,0 +1,109 @@
+{
+    "procesos_electorales": [
+      {
+        "proceso_electoral": "SEGUNDA VUELTA DE ELECCIÓN PRESIDENCIAL 2021",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITO",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "49.874%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "ELECCIONES GENERALES 2021",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITO",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "13.407%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "SEGUNDA VUELTA DE ELECCIÓN PRESIDENCIAL 2016",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "49.880%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "ELECCIONES GENERALES 2016",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "39.803%",
+          "posicion_obtenida_org_politica": 1,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "SEGUNDA VUELTA DE LA ELECCIÓN PRESIDENCIAL 2011",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA 2011",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "48.551%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "ELECCIONES GENERALES 2011",
+        "cargo_postulado": "PRESIDENTE DE LA REPUBLICA",
+        "organizacion_politica": "FUERZA 2011",
+        "circunscripcion": "NACION",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "23.566%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": false,
+          "votos_preferenciales_candidato": 0
+        }
+      },
+      {
+        "proceso_electoral": "ELECCIONES GENERALES 2006",
+        "cargo_postulado": "CONGRESISTA",
+        "organizacion_politica": "ALIANZA POR EL FUTURO",
+        "circunscripcion": "LIMA",
+        "elegido": true,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "18.902%",
+          "posicion_obtenida_org_politica": 2,
+          "org_politica_logro_representacion": true,
+          "votos_preferenciales_candidato": 602869
+        }
+      }
+    ]
+  }
