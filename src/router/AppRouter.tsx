@@ -13,6 +13,7 @@ import InfoElectoresPage from "../features/infoElectores/InfoElectoresPage";
 // Aprende
 import AprendeHomePage from "../features/aprende/AprendeHomePage";
 import AprendeCategoriaPage from "../features/aprende/AprendeCategoriaPage";
+import VotacionLeccionesPage from "../features/aprende/VotacionLeccionesPage";
 
 //Candidatos
 import ListaPartidosPage from "../features/candidatos/components/ListaPartidosPage"; 
@@ -80,12 +81,7 @@ export default function AppRouter() {
           {/* Categorías internas */}
           <Route
             path="/aprende/votacion"
-            element={
-              <AprendeCategoriaPage
-                title="¿Cómo funciona la votación?"
-                description="Aprende el proceso paso a paso."
-              />
-            }
+            element={<VotacionLeccionesPage />}
           />
 
           <Route
