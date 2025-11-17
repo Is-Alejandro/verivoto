@@ -1,3 +1,10 @@
+// Importar imágenes de candidatos
+import keikoFujimori from "../../../assets/images/candidates-2/Keiko_Fujimori_2_(cropped).jpg";
+import cesarAcuna from "../../../assets/images/candidates-2/César_Acuña_Peralta.jpg";
+import alfonsoLopez from "../../../assets/images/candidates-2/Alfonso_López-Chau.jpg";
+import barnechea from "../../../assets/images/candidates-2/Barnechea.jpg";
+import fiorellaMollinelli from "../../../assets/images/candidates-2/120px-Fiorella_Mollinelli.jpg";
+
 export interface Candidate {
     name: string;
     party: string;
@@ -9,11 +16,20 @@ export interface Candidate {
     photo: string;
   }
   
+  const candidateNames = [
+    "Keiko Fujimori",
+    "César Acuña Peralta",
+    "Alfonso López Chau",
+    "Barnechea",
+    "Fiorella Mollinelli",
+  ];
+
   const photoPool = [
-    "/assets/images/candidates/candidates.jpg",
-    "/assets/images/candidates/Keiko_Fujimori_2.jpg",
-    "/assets/images/candidates/LopezAliaga.jpg",
-    "/assets/images/candidates/presidente.png",
+    keikoFujimori,
+    cesarAcuna,
+    alfonsoLopez,
+    barnechea,
+    fiorellaMollinelli,
   ];
   
   const regions = [
@@ -30,14 +46,14 @@ export interface Candidate {
   ];
   
   const parties = [
-    "Partido Esperanza Nacional",
-    "Renovación Democrática",
-    "Frente Futuro",
-    "Movimiento Libertad Perú",
-    "Alianza Nacional",
-    "Perú Moderno",
-    "Partido Avanza País",
-    "Unión Ciudadana",
+    "Fuerza Popular",
+    "Alianza Para el Progreso",
+    "Renovación Popular",
+    "Acción Popular",
+    "Somos Perú",
+    "Partido Morado",
+    "Perú Libre",
+    "Avanza País",
   ];
   
   const proposals = [
@@ -70,20 +86,23 @@ export interface Candidate {
     attributesPool.sort(() => Math.random() - 0.5).slice(0, 3);
   
   export const candidatesData: Candidate[] = Array.from({ length: 80 }).map(
-    (_, i) => ({
-      name: `Candidato ${i + 1}`,
-      party: random(parties),
-      age: randomAge(),
-      region: random(regions),
-      type: random([
-        "Presidenciales",
-        "Senadores",
-        "Diputados",
-        "Parlamento Andino",
-      ]),
-      proposal: random(proposals),
-      attributes: randomAttributes(),
-      photo: random(photoPool),
-    })
+    (_, i) => {
+      const candidateIndex = i % candidateNames.length;
+      return {
+        name: candidateNames[candidateIndex],
+        party: random(parties),
+        age: randomAge(),
+        region: random(regions),
+        type: random([
+          "Presidenciales",
+          "Senadores",
+          "Diputados",
+          "Parlamento Andino",
+        ]),
+        proposal: random(proposals),
+        attributes: randomAttributes(),
+        photo: photoPool[candidateIndex],
+      };
+    }
   );
   
