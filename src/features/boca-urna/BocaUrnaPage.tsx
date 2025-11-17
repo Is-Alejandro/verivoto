@@ -66,7 +66,7 @@ export default function BocaUrnaPage() {
           <ChevronLeft size={24} className="text-neutral-900" />
         </button>
         <div>
-          <h1 className="text-2xl font-bold text-neutral-900">
+          <h1 className="text-2xl font-bold text-neutral-900 mt-3">
             🗳️ Boca de Urna
           </h1>
           <p className="text-sm text-neutral-600">
