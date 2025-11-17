@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from "../../components/layout/Layout";
 import UpcomingEventsCarousel from "./components/UpcomingEventsCarousel";
 import CalendarMonth from "./components/CalendarMonth";
 import MonthEventsList from "./components/MonthEventList";

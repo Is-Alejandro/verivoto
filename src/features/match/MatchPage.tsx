@@ -1,5 +1,4 @@
-import { useState, useMemo } from "react";
-import Layout from "../../components/layout/Layout";
+import { useState, useRef, useMemo } from "react";
 
 import MatchTitle from "./components/MatchTitle";
 import MatchSearchBar from "./components/MatchSearchBar";
