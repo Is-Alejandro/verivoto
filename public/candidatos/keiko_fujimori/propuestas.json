@@ -1,0 +1,150 @@
+{
+          "titulo_plan": "Plan de Gobierno 2021-2026",
+          "organizacion_politica": "FUERZA POPULAR",
+          "presentacion": "Pocas veces nuestra república a lo largo de su historia ha necesitado decisiones tan cruciales para su futuro y desarrollo. Después de décadas en las que tuvimos un crecimiento sostenido y sustentado en las reformas que se implementaron en el Perú durante el gobierno de Alberto Fujimori, nos enfrentamos nuevamente a una de las peores crisis económicas, falta de empleo y normas populistas que amenazan hacernos regresar nuevamente a las épocas de inestabilidad y caos. Nuestro plan de gobierno Rescate 2021: Plan de Rescate y Reconstrucción Nacional, está compuesto por 2 pilares y 11 ejes, que abordan los principales temas que nos comprometemos a impulsar en 5 años de gobierno.",
+          "propuestas": [
+            {
+              "titulo": "Reactivación económica y generación de empleo (Pilar 1)",
+              "descripcion": "Nuestro Perú es una de las economías más afectadas por la pandemia del COVID-19, y la reactivación económica y la generación de empleo serán prioridades. Propuestas: ",
+              "puntos_clave": [
+                "Plan de Reactivación Económica Choque de Inversiones: Aumento de la inversión pública y privada.",
+                "Impulso a la pequeña y mediana empresa (PYMES): Acceso a créditos, simplificación de trámites.",
+                "Fomento del turismo y gastronomía: Promoción internacional, infraestructura turística.",
+                "Formalización laboral: Reducción de la informalidad, beneficios para trabajadores y empleadores.",
+                "Infraestructura productiva: Inversión en carreteras, puertos y aeropuertos."
+              ]
+            },
+            {
+              "titulo": "Eje 1: Lucha Contra la Pandemia y Fortalecimiento del Sistema de Salud",
+              "descripcion": "La pandemia ha evidenciado las deficiencias de nuestro sistema de salud. Nuestro compromiso es fortalecerlo y prepararnos para futuras crisis.",
+              "puntos_clave": [
+                "Vacunación universal y gratuita: Adquisición de vacunas, campañas de inmunización.",
+                "Fortalecimiento de la atención primaria: Más centros de salud, personal médico y equipamiento.",
+                "Hospitales modernos y equipados: Construcción y equipamiento de hospitales a nivel nacional.",
+                "Digitalización del sistema de salud: Historia clínica electrónica, telemedicina.",
+                "Inversión en investigación y desarrollo: Apoyo a la ciencia y tecnología en salud."
+              ]
+            },
+            {
+              "titulo": "Eje 2: Educación de Calidad para Todos",
+              "descripcion": "La educación es la base del desarrollo. Garantizaremos una educación de calidad en todos los niveles, con énfasis en la innovación y la tecnología.",
+              "puntos_clave": [
+                "Retorno seguro a clases: Protocolos de bioseguridad, infraestructura adecuada.",
+                "Brecha digital cero: Acceso a internet y dispositivos tecnológicos para estudiantes y docentes.",
+                "Currículo actualizado y pertinente: Formación en habilidades blandas, pensamiento crítico y tecnología.",
+                "Revalorización de la carrera docente: Aumento de salarios, capacitación y evaluación constante.",
+                "Educación superior de calidad: Fortalecimiento de universidades e institutos técnicos."
+              ]
+            },
+            {
+              "titulo": "Eje 3: Seguridad Ciudadana y Lucha Contra la Delincuencia",
+              "descripcion": "La inseguridad ciudadana es uno de los principales problemas del país. Implementaremos medidas drásticas para combatirla y restaurar la paz.",
+              "puntos_clave": [
+                "Tolerancia cero a la delincuencia: Endurecimiento de penas, leyes más drásticas.",
+                "Fortalecimiento de la Policía Nacional: Mayor presupuesto, equipamiento y capacitación.",
+                "Tecnología al servicio de la seguridad: Cámaras de vigilancia, sistemas de monitoreo.",
+                "Rehabilitación de centros penitenciarios: Modernización de cárceles, programas de reinserción.",
+                "Participación ciudadana: Vecindarios seguros, rondas urbanas."
+              ]
+            },
+            {
+              "titulo": "Eje 4: Justicia Independiente y Lucha Contra la Corrupción",
+              "descripcion": "La corrupción carcome las instituciones y afecta la confianza de los ciudadanos. Impulsaremos una reforma integral del sistema de justicia.",
+              "puntos_clave": [
+                "Reforma del sistema de justicia: Selección transparente de jueces y fiscales.",
+                "Fiscalía anticorrupción: Fortalecimiento de la fiscalía especializada en delitos de corrupción.",
+                "Transparencia y rendición de cuentas: Acceso a la información pública, control ciudadano.",
+                "Lucha contra el crimen organizado: Desarticulación de mafias, lavado de activos.",
+                "Educación en valores: Fomento de la ética y la moral en la sociedad."
+              ]
+            },
+            {
+              "titulo": "Eje 5: Desarrollo Sostenible y Protección del Medio Ambiente",
+              "descripcion": "El Perú es un país megadiverso con una riqueza natural invaluable. Promoveremos un desarrollo sostenible que preserve nuestros recursos para las futuras generaciones.",
+              "puntos_clave": [
+                "Energías renovables: Impulso a la energía solar, eólica e hidroeléctrica.",
+                "Manejo de residuos sólidos: Programas de reciclaje, plantas de tratamiento.",
+                "Protección de áreas naturales: Creación y conservación de parques nacionales y reservas.",
+                "Agricultura sostenible: Fomento de prácticas agrícolas amigables con el medio ambiente.",
+                "Educación ambiental: Conciencia ecológica en escuelas y comunidades."
+              ]
+            },
+            {
+              "titulo": "Eje 6: Inclusión Social y Oportunidades para Todos",
+              "descripcion": "Reduciremos la brecha de desigualdad y garantizaremos oportunidades para todos los peruanos, sin distinción.",
+              "puntos_clave": [
+                "Programas sociales focalizados: Apoyo a familias en situación de pobreza y vulnerabilidad.",
+                "Acceso a servicios básicos: Agua, desagüe, electricidad en zonas rurales y periurbanas.",
+                "Vivienda digna: Programas de vivienda social, acceso a créditos hipotecarios.",
+                "Promoción de la igualdad de género: Lucha contra la violencia de género, empoderamiento de la mujer.",
+                "Atención a personas con discapacidad: Inclusión laboral, acceso a servicios."
+              ]
+            },
+            {
+              "titulo": "Eje 7: Modernización del Estado y Descentralización",
+              "descripcion": "Un Estado moderno y eficiente al servicio de los ciudadanos. Impulsaremos la descentralización para acercar el Estado a las regiones.",
+              "puntos_clave": [
+                "Simplificación administrativa: Reducción de trámites, digitalización de servicios.",
+                "Gobierno electrónico: Plataformas virtuales, participación ciudadana.",
+                "Fortalecimiento de gobiernos regionales y locales: Capacitación, transferencia de recursos.",
+                "Transparencia y lucha contra la corrupción: Mecanismos de control, rendición de cuentas.",
+                "Servicio civil meritocrático: Profesionalización de la administración pública."
+              ]
+            },
+            {
+              "titulo": "Eje 8: Lucha contra la Pobreza y Programas Sociales",
+              "descripcion": "Para el año 2019, el Perú tenía aproximadamente 6 millones 400 mil personas en situación de pobreza... el impacto de la pandemia se hace y hará sentir, de forma dolorosa.",
+              "puntos_clave": [
+                "Revalorar la importancia del enfoque de ciclo de vida... en... las políticas públicas de lucha contra la pobreza.",
+                "Corregir las serias deficiencias y desarticulaciones señaladas respecto al SISFOH.",
+                "Generar una articulación de las diversas intervenciones de los programas sociales a través de la innovación.",
+                "Mejorar los programas sociales en torno a la evidencia.",
+                "Promover la transparencia y la rendición de cuentas... de los programas sociales.",
+                "Rescatar a nuestra infancia a través de una atención integral... [rescatando] WAWA WASI."
+              ]
+            },
+            {
+              "titulo": "Eje 9: Cultura y Deporte para el Desarrollo",
+              "descripcion": "La cultura y el deporte son herramientas poderosas para el desarrollo humano y la cohesión social. Impulsaremos políticas que fomenten su práctica y acceso.",
+              "puntos_clave": [
+                "Promoción de la identidad cultural: Rescate de tradiciones, apoyo a artistas y gestores culturales.",
+                "Infraestructura deportiva: Construcción y mantenimiento de espacios deportivos.",
+                "Programas de formación artística y deportiva: Acceso gratuito a talleres y academias.",
+                "Fomento del deporte de alta competencia: Apoyo a deportistas de élite, preparación para eventos internacionales.",
+                "Promoción de la lectura: Creación de bibliotecas, ferias del libro."
+              ]
+            },
+            {
+              "titulo": "Eje 10: Promoción de la Juventud",
+              "descripcion": "Los jóvenes son el futuro del país. Les brindaremos las herramientas y oportunidades para que desarrollen su máximo potencial.",
+              "puntos_clave": [
+                "Fomento del emprendimiento juvenil: Acceso a créditos, incubadoras de negocios.",
+                "Becas y créditos educativos: Oportunidades para acceder a educación superior de calidad.",
+                "Programas de capacitación laboral: Formación en habilidades demandadas por el mercado.",
+                "Participación juvenil: Espacios de diálogo, voluntariado, liderazgo.",
+                "Establecer mecanismos de protección para las mascotas... 'Pata Amigo' - Registro Nacional.",
+                "Promover el uso y acceso a bibliotecas físicas... y generar bibliotecas virtuales.",
+                "Visibilizar de forma especial a los jóvenes con discapacidad.",
+                "Promover la participación de los jóvenes en los diferentes espacios descentralizados.",
+                "Insertar en la malla curricular... el enfoque de desarrollo de habilidades blandas y fortalecimiento emocional.",
+                "Diseñar y promover una política nacional dirigida a los voluntarios del país."
+              ]
+            },
+            {
+              "titulo": "Decálogo de Fuerza Popular: La esencia de la Constitución de 1993",
+              "descripcion": "El Fujimorismo, es una fuerza popular que surge en el escenario político de una de las etapas históricas más difíciles que ha enfrentado nuestro país, en su etapa republicana... define y orienta el desarrollo del Perú con justicia social, con equidad, con derecho al progreso y garantizando la seguridad personal.",
+              "puntos_clave": [
+                "1. Protegemos decididamente el derecho a la vida desde su concepción. Defendemos... la familia...",
+                "2. Creemos en que los padres son quienes... se encargan de la educación de sus hijos.",
+                "3. Defendemos la igualdad ante la Ley y luchamos contra todo acto de discriminación...",
+                "4. Rendimos homenaje y apoyamos decididamente a la policía nacional y a nuestras fuerzas armadas...",
+                "5. Creemos que los partidos políticos son la base fundamental de la democracia...",
+                "6. Estamos convencidos que la verdadera democracia... se materializa en servicios de salud, educación, justicia, seguridad y oportunidades...",
+                "7. Defendemos la seguridad jurídica para todos. La igualdad, la propiedad, el debido proceso...",
+                "8. Impulsamos la economía popular, fundamentada en la economía social de mercado.",
+                "9. Creemos en la justa redistribución de las riquezas... la educación es el gran movilizador social...",
+                "10. El Perú es un país megadiverso cuyo futuro es sostenible creyendo en la coexistencia de la inversión y el cuidado del ambiente..."
+              ]
+            }
+          ]
+        }

@@ -1,0 +1,235 @@
+{
+    "Estado": "success",
+    "Mensaje": "",
+    "Data": {
+        "AfiliacionesEdad": [
+            {
+                "Rotulo": "MENORES DE 30 AÑOS",
+                "Cantidad": 9172,
+                "TxCantidad": "9,172",
+                "Porcentaje": "17.926%"
+            },
+            {
+                "Rotulo": "DE 30 A 39 AÑOS",
+                "Cantidad": 11280,
+                "TxCantidad": "11,280",
+                "Porcentaje": "22.045%"
+            },
+            {
+                "Rotulo": "DE 40 A 49 AÑOS",
+                "Cantidad": 10916,
+                "TxCantidad": "10,916",
+                "Porcentaje": "21.334%"
+            },
+            {
+                "Rotulo": "DE 50 A 59 AÑOS",
+                "Cantidad": 9658,
+                "TxCantidad": "9,658",
+                "Porcentaje": "18.875%"
+            },
+            {
+                "Rotulo": "DE 60 A 69 AÑOS",
+                "Cantidad": 6499,
+                "TxCantidad": "6,499",
+                "Porcentaje": "12.702%"
+            },
+            {
+                "Rotulo": "MAYORES DE 70 AÑOS",
+                "Cantidad": 3642,
+                "TxCantidad": "3,642",
+                "Porcentaje": "7.118%"
+            }
+        ],
+        "AutoridadesPartidarias": [
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/miguel-angel-torres-morales_historial-partidario_+Zy9@OYaRvw=yO",
+                "TxCargo": "APODERADO",
+                "TxRepresentante": "MIGUEL ANGEL TORRES MORALES",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=P6ip/iJ52Oe05cuQ45zCfJbMI1l8FIdnii\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/marjorie-rosario-condezo-paredes_historial-partidario_oUNMbCKOeZkc6+@0ElOxMA==NC",
+                "TxCargo": "PERSONERO LEGAL ALTERNO",
+                "TxRepresentante": "MARJORIE ROSARIO CONDEZO PAREDES",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=k75wLwg/SPnjVTflt/XNDZeMZWx4fjjE5w\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/martha-gladys-chavez-cossio_historial-partidario_JqxsTvMkofYc6+@0ElOxMA==xv",
+                "TxCargo": "PERSONERO LEGAL TITULAR",
+                "TxRepresentante": "MARTHA GLADYS CHAVEZ COSSIO",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=gbdfYvBVJ3TyJlZzyq7b993jdIgi2LD8dv\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/luis-enrique-veliz-carhuaricra_historial-partidario_DNARSN4KS7Ec6+@0ElOxMA==AN",
+                "TxCargo": "PERSONERO TÉCNICO ALTERNO",
+                "TxRepresentante": "LUIS ENRIQUE VELIZ CARHUARICRA",
+                "TxFecha": "01/10/2020",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=uxMOc1c8%2B%2BiJ/w0DyPxzSpehV1BqFuPAM1\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/york-paris-block-gonzalez_historial-partidario_eMkeQyNAyY8=ky",
+                "TxCargo": "PERSONERO TÉCNICO TITULAR",
+                "TxRepresentante": "YORK PARIS BLOCK GONZALEZ",
+                "TxFecha": "22/07/2009",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=qXJKj/AIvK0uPEJ5tvfEYFjsLWrd%2BeR%2BJ/\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
+                "TxCargo": "PRESIDENTA",
+                "TxRepresentante": "KEIKO SOFIA FUJIMORI HIGUCHI",
+                "TxFecha": "13/02/2018",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=1TWiY0tkeDg3qflRVmQ07JL6An3KlvS2W0\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/carmela-paucara-paxi_historial-partidario_LEkcyxIu@Vg=kx",
+                "TxCargo": "REPRESENTANTE ANTE EL SISTEMA FINANCIERO",
+                "TxRepresentante": "CARMELA PAUCARA PAXI",
+                "TxFecha": "17/02/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=htwZraWeFGA1nqY/0wt1QOEjLojIu5Gkwa\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/martha-gladys-chavez-cossio_historial-partidario_JqxsTvMkofYc6+@0ElOxMA==xv",
+                "TxCargo": "REPRESENTANTE LEGAL",
+                "TxRepresentante": "MARTHA GLADYS CHAVEZ COSSIO",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=gbdfYvBVJ3TyJlZzyq7b993jdIgi2LD8dv\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/luis-arturo-alegria-garcia_historial-partidario_tD4dfeAweD0c6+@0ElOxMA==4e",
+                "TxCargo": "SECRETARIO NACIONAL DEL GRUPO PARLAMENTARIO",
+                "TxRepresentante": "LUIS ARTURO ALEGRIA GARCIA",
+                "TxFecha": "16/08/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=EAar1y0tH8HR2D3jDMqKrWe2Cip40ZlMay\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/luis-fernando-galarreta-velarde_historial-partidario_LZ7GFU0Namc=7U",
+                "TxCargo": "SECRETARÍA GENERAL NACIONAL",
+                "TxRepresentante": "LUIS FERNANDO GALARRETA VELARDE",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=vq7btCCD5LpMhliutF/foQ2TT1KUKNsV7C\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/marco-antonio-pacheco-quispe_historial-partidario_2Se@2K0Yoqcc6+@0ElOxMA==eK",
+                "TxCargo": "SECRETARÍA NACIONAL DE COMUNICACIONES",
+                "TxRepresentante": "MARCO ANTONIO PACHECO QUISPE",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=n3bHLpdOVAAbpDXAYp72BTydlg6HmZEjbp\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/roy-ernesto-ventura-angel_historial-partidario_I4DdLik3Inw=Di",
+                "TxCargo": "SECRETARÍA NACIONAL DE DISCIPLINA",
+                "TxRepresentante": "ROY ERNESTO VENTURA ANGEL",
+                "TxFecha": "09/05/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=K5d9phZEueY1jRIDbsErM4CTK2c5O9ZWdh\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/diethell-columbus-murata_historial-partidario_LhvLNdvPtvE=vd",
+                "TxCargo": "SECRETARÍA NACIONAL DE FORMACIÓN POLÍTICA",
+                "TxRepresentante": "DIETHELL COLUMBUS MURATA",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=Jq/5UNzyMa8V/IBH9TRVA3kMIGQhan3A/N\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/carmen-patricia-juarez-gallegos_historial-partidario_BUjwplWbOMU=jl",
+                "TxCargo": "SECRETARÍA NACIONAL DE GOBIERNOS SUBNACIONALES",
+                "TxRepresentante": "CARMEN PATRICIA JUAREZ GALLEGOS",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=qJsAKubrynyoZc1baneWWjMgjbfC%2BBL0su\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/rosangella-andrea-barbaran-reyes_historial-partidario_@0M2ikOS1I4c6+@0ElOxMA==Mk",
+                "TxCargo": "SECRETARÍA NACIONAL DE JÓVENES",
+                "TxRepresentante": "ROSANGELLA ANDREA BARBARAN REYES",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=Dl8fW2CbwOzr04mV3UdyCD9ZTdN1Xkb882\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/milagros-emperatriz-salazar-de-la-torre_historial-partidario_2GantNnGqw8=aN",
+                "TxCargo": "SECRETARÍA NACIONAL DE MUJER Y FAMILIA",
+                "TxRepresentante": "MILAGROS EMPERATRIZ SALAZAR DE LA TORRE",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=b%2B5S8OnHOC0eqBBEj4%2BUfuAu/%2BKBoWNM5O\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/carmela-paucara-paxi_historial-partidario_LEkcyxIu@Vg=kx",
+                "TxCargo": "SECRETARÍA NACIONAL DE ORGANIZACIÓN",
+                "TxRepresentante": "CARMELA PAUCARA PAXI",
+                "TxFecha": "09/05/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=htwZraWeFGA1nqY/0wt1QOEjLojIu5Gkwa\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/cecilia-isabel-chacon-de-vettori_historial-partidario_i0hIaFOXL2E=hF",
+                "TxCargo": "SECRETARÍA NACIONAL DE PERUANOS EN EL EXTERIOR",
+                "TxRepresentante": "CECILIA ISABEL CHACON DE VETTORI",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=nmpa4bh4vrpKtXrJQC6txHIPJ%2B9Zi3Utpb\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/miguel-angel-torres-morales_historial-partidario_+Zy9@OYaRvw=yO",
+                "TxCargo": "SUB SECRETARÍA GENERAL NACIONAL",
+                "TxRepresentante": "MIGUEL ANGEL TORRES MORALES",
+                "TxFecha": "13/02/2024",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=P6ip/iJ52Oe05cuQ45zCfJbMI1l8FIdnii\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/cecilia-isabel-chacon-de-vettori_historial-partidario_i0hIaFOXL2E=hF",
+                "TxCargo": "TESORERA TITULAR",
+                "TxRepresentante": "CECILIA ISABEL CHACON DE VETTORI",
+                "TxFecha": "27/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=nmpa4bh4vrpKtXrJQC6txHIPJ%2B9Zi3Utpb\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/leticia-maruja-leiva-baylon_historial-partidario_M2Y2vQ3aJSY=YQ",
+                "TxCargo": "TESORERO SUPLENTE",
+                "TxRepresentante": "LETICIA MARUJA LEIVA BAYLON",
+                "TxFecha": "12/11/2018",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=HOvv9BJTsTA=vB\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/leny-palma-encalada_historial-partidario_vrGoLtfMWxM=Gt",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL  - PRESIDENTE",
+                "TxRepresentante": "LENY PALMA ENCALADA",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=RswBs32RjBRNzmQVi675wxV2tJJjveo4w3\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/marjorie-rosario-condezo-paredes_historial-partidario_oUNMbCKOeZkc6+@0ElOxMA==NC",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL - PRIMER MIEMBRO SUPLENTE",
+                "TxRepresentante": "MARJORIE ROSARIO CONDEZO PAREDES",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=k75wLwg/SPnjVTflt/XNDZeMZWx4fjjE5w\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/victor-alberto-cevallos-teran_historial-partidario_6Wq5j@1XeUU=q@",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL - SECRETARIO",
+                "TxRepresentante": "VICTOR ALBERTO CEVALLOS TERAN",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=w/iVlfy5OvjrN6D0wGfqBYFJ3XaYTnqIif\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/christian-edwin-davila-vilchez_historial-partidario_F5OvF2TTq1wc6+@0ElOxMA==O2",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL - SEGUNDO MIEMBRO SUPLENTE",
+                "TxRepresentante": "CHRISTIAN EDWIN DAVILA VILCHEZ",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=HOvv9BJTsTA=vB\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/lariza-sheila-pocco-camilo_historial-partidario_Q@h9dolwyFUc6+@0ElOxMA==ho",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL - TERCER MIEMBRO SUPLENTE",
+                "TxRepresentante": "LARIZA SHEILA POCCO CAMILO",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=HOvv9BJTsTA=vB\u0026tk=cNdt%2B0PJT8Q=d0"
+            },
+            {
+                "TxRutaPolitico": "/Politico/FichaPolitico/shirley-montenegro-flores_historial-partidario_DVioec6BV@cc6+@0ElOxMA==ic",
+                "TxCargo": "TRIBUNAL ELECTORAL NACIONAL - VICEPRESIDENTE",
+                "TxRepresentante": "SHIRLEY MONTENEGRO FLORES",
+                "TxFecha": "25/01/2025",
+                "TxRutaFoto": "/General/ObtenerFotoPolitico?photoURL=JRsYL8f8YM%2BckCSYk7EKHlYcLJyfFPX2s8\u0026tk=cNdt%2B0PJT8Q=d0"
+            }
+        ]
+    }
+}

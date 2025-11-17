@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import presidente from "../../../assets/images/candidates/presidente.png";
-import senador from "../../../assets/images/candidates/LopezAliaga.jpg";
-import diputado from "../../../assets/images/candidates/Keiko_Fujimori_2.jpg";
-import parlamento from "../../../assets/images/candidates/candidates.jpg";
+
+// Rutas a las imágenes en la carpeta public
+const presidente = "/img/candidatos/presidente.png";
+const senador = "/img/candidatos/LopezAliaga.jpg";
+const diputado = "/img/candidatos/Keiko_Fujimori_2.jpg";
+const parlamento = "/img/candidatos/candidates.jpg";
 
 export default function CandidatesSection() {
   const navigate = useNavigate();

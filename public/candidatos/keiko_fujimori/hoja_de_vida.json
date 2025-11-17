@@ -1,0 +1,788 @@
+{
+    "data": {
+        "oDatosPersonales": {
+            "idHojaVida": 133878,
+            "strCarneExtranjeria": "",
+            "strDocumentoIdentidad": "10001088",
+            "strApellidoPaterno": "FUJIMORI",
+            "strApellidoMaterno": "HIGUCHI",
+            "strNombres": "KEIKO SOFIA",
+            "strSexo": "2",
+            "strFechaNacimiento": "25/05/1975",
+            "strPaisNacimiento": "PERÚ",
+            "strUbigeoNacimiento": "140133",
+            "strNaciDepartamento": "LIMA",
+            "strNaciProvincia": "LIMA",
+            "strNaciDistrito": "JESUS MARIA",
+            "strNaciUbiDepartamento": null,
+            "strNaciUbiProvincia": null,
+            "strNaciUbiDistrito": null,
+            "strUbigeoDomicilio": "140130",
+            "strDomiDepartamento": "LIMA",
+            "strDomiProvincia": "LIMA",
+            "strDomiDistrito": "SANTIAGO DE SURCO",
+            "strDomiUbiDepartamento": null,
+            "strDomiUbiProvincia": null,
+            "strDomiUbiDistrito": null,
+            "strDomicilioDirecc": "AV. DE LA FLORESTA 241 DPTO. 301 URB. CHACARILLA DEL ESTANQUE",
+            "strUbigeoPostula": "000000",
+            "strPostulaDepartamento": " ",
+            "strPostulaProvincia": " ",
+            "strPostulaDistrito": " ",
+            "strPostulaUbiDepartamento": null,
+            "strPostulaUbiProvincia": null,
+            "strPostulaUbiDistrito": null,
+            "strAnioPostula": "2020",
+            "strterminoregistro": null,
+            "idCargoEleccion": 1,
+            "strCargoEleccion": "PRESIDENTE DE LA REPÚBLICA",
+            "idCandidato": 162305,
+            "idProcesoElectoral": 110,
+            "strRegistro": null,
+            "idEstado": 2,
+            "strEstado": "ACTIVO (U)",
+            "strUsuario": "16787889",
+            "strRutaArchivo": "/Assets/Fotos-HojaVida/133878.jpg",
+            "decPorcentaje": 100,
+            "strNombreArchivo": "",
+            "idParamHojaVida": 25,
+            "strHojaVida": "CONFIRMADA",
+            "idOrganizacionPolitica": 0,
+            "strProcesoElectoral": 0,
+            "strFeTerminoRegistro": "14/12/2020 21:31:17",
+            "idCargoEleccionOtro": 0,
+            "idCandidatoOtro": 0,
+            "strOrganizacionPolitica": "FUERZA POPULAR",
+            "strPeriodo": "GENERALES 2021 - 2026",
+            "strEnlaceMenu": null,
+            "strClase": null,
+            "idUsuario": 0,
+            "intPagina": 0,
+            "intCantidadPagina": 0,
+            "intCantidadReg": 0,
+            "idTipoEleccion": 1,
+            "intItem": 0,
+            "strComentario": "",
+            "idParamEstServMINEDUTec": 66,
+            "idParamEstServSUNEDU": 66,
+            "idParamEstServROP": 65,
+            "idParamEstServROPRenuncia": 64,
+            "idParamEstServINFOGOB": 65,
+            "idParamEstServSUNARP": 65,
+            "idTipoDocPadron": 0,
+            "strParamEstServMINEDUTec": "SIN DATOS",
+            "strParamEstServSUNEDU": "SIN DATOS",
+            "strParamEstServROP": "CON DATOS",
+            "strParamEstServROPRenuncia": "",
+            "strParamEstServINFOGOB": "CON DATOS",
+            "strParamEstServSUNARP": "CON DATOS"
+        },
+        "oRespuesta": null,
+        "lExperienciaLaboral": [
+            {
+                "idHVExpeLaboral": 151099,
+                "strTengoExpeLaboral": "1",
+                "intItemExpeLaboral": 1,
+                "strCentroTrabajo": "PARTIDO  POLÍTICO FUERZA POPULAR",
+                "strOcupacionProfesion": "PRESIDENTA",
+                "strRucTrabajo": "20535603261",
+                "strDireccionTrabajo": "AVDA.  9 DE DICIEMBRE 422, EX PASEO COLON  CERCADO DE LIMA",
+                "strAnioTrabajoDesde": "2013",
+                "strAnioTrabajoHasta": "0000",
+                "strUbigeoTrabajo": "140101",
+                "strTrabajoPais": "PERÚ",
+                "strTrabajoDepartamento": "LIMA",
+                "strTrabajoProvincia": "LIMA",
+                "strTrabajoDistrito": "LIMA",
+                "strTrabajoUbiDepartamento": null,
+                "strTrabajoUbiProvincia": null,
+                "strTrabajoUbiDistrito": null,
+                "idHojaVida": 133878,
+                "idEstado": 1,
+                "strUsuario": "16787889",
+                "strOrder": null,
+                "strComentario": "",
+                "strFechaRegistro": "14/12/2020 15:11:18"
+            },
+            {
+                "idHVExpeLaboral": 151104,
+                "strTengoExpeLaboral": "1",
+                "intItemExpeLaboral": 2,
+                "strCentroTrabajo": "OPORTUNIDADES INSTITUTO PARA EL DESARROLLO",
+                "strOcupacionProfesion": "PRESIDENTA",
+                "strRucTrabajo": "20544100344",
+                "strDireccionTrabajo": "AVDA. 9 DE DICIEMBRE  422, EX PASEO COLON - CERCADO DE LIMA",
+                "strAnioTrabajoDesde": "2011",
+                "strAnioTrabajoHasta": "2013",
+                "strUbigeoTrabajo": "140101",
+                "strTrabajoPais": "PERÚ",
+                "strTrabajoDepartamento": "LIMA",
+                "strTrabajoProvincia": "LIMA",
+                "strTrabajoDistrito": "LIMA",
+                "strTrabajoUbiDepartamento": null,
+                "strTrabajoUbiProvincia": null,
+                "strTrabajoUbiDistrito": null,
+                "idHojaVida": 133878,
+                "idEstado": 1,
+                "strUsuario": "16787889",
+                "strOrder": null,
+                "strComentario": "",
+                "strFechaRegistro": "14/12/2020 15:17:21"
+            },
+            {
+                "idHVExpeLaboral": 151107,
+                "strTengoExpeLaboral": "1",
+                "intItemExpeLaboral": 3,
+                "strCentroTrabajo": "CONGRESO DE LA REPUBLICA",
+                "strOcupacionProfesion": "CONGRESISTA DE LA REPUBLICA",
+                "strRucTrabajo": "20161749126",
+                "strDireccionTrabajo": "PLAZA BOLIVAR S/N, CERCADO DE LIMA",
+                "strAnioTrabajoDesde": "2006",
+                "strAnioTrabajoHasta": "2011",
+                "strUbigeoTrabajo": "140101",
+                "strTrabajoPais": "PERÚ",
+                "strTrabajoDepartamento": "LIMA",
+                "strTrabajoProvincia": "LIMA",
+                "strTrabajoDistrito": "LIMA",
+                "strTrabajoUbiDepartamento": null,
+                "strTrabajoUbiProvincia": null,
+                "strTrabajoUbiDistrito": null,
+                "idHojaVida": 133878,
+                "idEstado": 1,
+                "strUsuario": "16787889",
+                "strOrder": null,
+                "strComentario": "",
+                "strFechaRegistro": "14/12/2020 15:19:07"
+            }
+        ],
+        "oEduBasica": {
+            "idHVEduBasica": 133116,
+            "strTengoEduBasica": "1",
+            "strEduPrimaria": "1",
+            "strConcluidoEduPrimaria": "1",
+            "strEduSecundaria": "1",
+            "strConcluidoEduSecundaria": "1",
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "strFechaRegistro": "9/12/2020 18:03:19"
+        },
+        "oEduTecnico": {
+            "idHVEduTecnico": 130565,
+            "strTengoEduTecnico": "0",
+            "strCenEstudioTecnico": "",
+            "strCarreraTecnico": "",
+            "strConcluidoEduTecnico": "0",
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "strComentario": "",
+            "strRegistroManual": "1",
+            "strFechaRegistro": ""
+        },
+        "oEduNoUniversitaria": {
+            "idHVNoUniversitaria": 131287,
+            "strTengoNoUniversitaria": "2",
+            "strEduNoUniversitaria": "0",
+            "strCentroEstudioNoUni": "",
+            "strCarreraNoUni": "",
+            "strConcluidoNoUni": "0",
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "strComentario": null
+        },
+        "lEduUniversitaria": [
+            {
+                "idHVEduUniversitaria": 136610,
+                "strTengoEduUniversitaria": "1",
+                "intItemEduUni": 1,
+                "strEduUniversitaria": "1",
+                "strUniversidad": "BOSTON UNIVERSITY",
+                "strCarreraUni": "ADMINISTRACION DE EMPRESAS",
+                "strConcluidoEduUni": "1",
+                "strEgresadoEduUni": "1",
+                "strBachillerEduUni": "0",
+                "strAnioBachiller": "1997",
+                "strTituloUni": "0",
+                "strAnioTitulo": "",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strMetodoAccion": null,
+                "strOrder": null,
+                "strComentario": "",
+                "strRegistroManual": "1",
+                "strFechaRegistro": "9/12/2020 19:06:41"
+            }
+        ],
+        "oEduPosgrado": {
+            "idHVPosgrado": 130364,
+            "strTengoPosgrado": "1",
+            "intItemPosgrado": 1,
+            "strCenEstudioPosgrado": "COLUMBIA UNIVERESITY",
+            "strEspecialidadPosgrado": "MAESTRÍA  EN ADMINISTRACIÓN DE EMPRESAS",
+            "strConcluidoPosgrado": "1",
+            "strEgresadoPosgrado": "1",
+            "strEsMaestro": "1",
+            "strEsDoctor": "0",
+            "strAnioPosgrado": "2008",
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "strComentario": "",
+            "strRegistroManual": "1",
+            "strFechaRegistro": "9/12/2020 19:10:16"
+        },
+        "lEduPosgrado": [
+            {
+                "idHVPosgrado": 130364,
+                "strTengoPosgrado": "1",
+                "intItemPosgrado": 1,
+                "strCenEstudioPosgrado": "COLUMBIA UNIVERESITY",
+                "strEspecialidadPosgrado": "MAESTRÍA  EN ADMINISTRACIÓN DE EMPRESAS",
+                "strConcluidoPosgrado": "1",
+                "strEgresadoPosgrado": "1",
+                "strEsMaestro": "1",
+                "strEsDoctor": "0",
+                "strAnioPosgrado": "2008",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strComentario": "",
+                "strRegistroManual": "1",
+                "strFechaRegistro": "9/12/2020 19:10:16"
+            }
+        ],
+        "lEduPosgradoOtro": [],
+        "lCargoPartidario": [
+            {
+                "idHVCargoPartidario": 131539,
+                "strTengoCargoPartidario": "1",
+                "intItemCargoPartidario": 1,
+                "idOrgPolCargoPartidario": 1366,
+                "strOrgPolCargoPartidario": "FUERZA POPULAR",
+                "strCargoPartidario": "Fundador",
+                "strAnioCargoPartiDesde": "2009",
+                "strAnioCargoPartiHasta": "0000",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "",
+                "strRegistroManual": "2",
+                "strFechaRegistro": "9/12/2020 17:26:23"
+            },
+            {
+                "idHVCargoPartidario": 131538,
+                "strTengoCargoPartidario": "1",
+                "intItemCargoPartidario": 2,
+                "idOrgPolCargoPartidario": 1366,
+                "strOrgPolCargoPartidario": "FUERZA POPULAR",
+                "strCargoPartidario": "Presidenta",
+                "strAnioCargoPartiDesde": "2020",
+                "strAnioCargoPartiHasta": "0000",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "",
+                "strRegistroManual": "2",
+                "strFechaRegistro": "9/12/2020 17:26:23"
+            }
+        ],
+        "lCargoEleccion": [
+            {
+                "idHVCargoEleccion": 131928,
+                "strCargoEleccion": "1",
+                "intItemCargoEleccion": 1,
+                "idOrgPolCargoElec": 194,
+                "strOrgPolCargoElec": "ALIANZA POR EL FUTURO",
+                "strAnioCargoElecDesde": "2006",
+                "strAnioCargoElecHasta": "2011",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idCargoEleccion": 4,
+                "strCargoEleccion2": "CONGRESISTA",
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "",
+                "strRegistroManual": "2",
+                "strFechaRegistro": "9/12/2020 17:26:23"
+            }
+        ],
+        "lRenunciaOP": [
+            {
+                "idHVRenunciaOP": 131482,
+                "strTengoRenunciaOP": "2",
+                "intItemRenunciaOP": 1,
+                "idOrgPolRenunciaOP": 0,
+                "strOrgPolRenunciaOP": "",
+                "strAnioRenunciaOP": "",
+                "strFechaRegistro": "",
+                "idEstado": 1,
+                "strUsuario": "16787889",
+                "idHojaVida": 133878,
+                "cadenaRenuncia": null,
+                "strOrder": null,
+                "strComentario": "",
+                "strRegistroManual": "1"
+            }
+        ],
+        "lSentenciaPenal": [
+            {
+                "idHVSentenciaPenal": 130196,
+                "strTengoSentenciaPenal": "2",
+                "intItemSentenciaPenal": 1,
+                "strExpedientePenal": "",
+                "strFechaSentenciaPenal": "",
+                "strOrganoJudiPenal": "",
+                "strDelitoPenal": "",
+                "strFalloPenal": "",
+                "idParamModalidad": 0,
+                "strModalidad": "",
+                "strOtraModalidad": "",
+                "idParamCumpleFallo": 0,
+                "strCumpleFallo": "",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "",
+                "strFechaRegistro": "9/12/2020 19:13:43"
+            }
+        ],
+        "lSentenciaObliga": [
+            {
+                "idHVSentenciaObliga": 130354,
+                "strTengoSentenciaObliga": "2",
+                "intItemSentenciaObliga": 1,
+                "idParamMateriaSentencia": 0,
+                "strMateriaSentencia": "",
+                "strExpedienteObliga": "",
+                "strOrganoJuridicialObliga": "",
+                "strFalloObliga": "",
+                "idEstado": 1,
+                "strEstado": null,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "",
+                "strFechaRegistro": "9/12/2020 19:14:39"
+            }
+        ],
+        "oIngresos": {
+            "idHVIngresos": 132489,
+            "strTengoIngresos": "1",
+            "strAnioIngresos": "2019",
+            "decRemuBrutaPublico": 0,
+            "decRemuBrutaPrivado": 222526.74,
+            "decRentaIndividualPublico": 0,
+            "decRentaIndividualPrivado": 0,
+            "decOtroIngresoPublico": 0,
+            "decOtroIngresoPrivado": 0,
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "strFechaRegistro": "9/12/2020 19:16:07"
+        },
+        "lBienInmueble": [
+            {
+                "idHVBienInmueble": 161887,
+                "strTengoInmueble": "2",
+                "intItemInmueble": 1,
+                "strTipoBienInmueble": "",
+                "strUbigeoInmueble": "",
+                "strInmuebleUbiDepartamento": null,
+                "strInmuebleUbiProvincia": null,
+                "strInmuebleUbiDistrito": null,
+                "strInmueblePais": "",
+                "strInmuebleDepartamento": "",
+                "strInmuebleProvincia": "",
+                "strInmuebleDistrito": "",
+                "strInmuebleDireccion": "",
+                "strInmuebleSunarp": "",
+                "strPartidaSunarp": "",
+                "strFichaTomoSunarp": "",
+                "decAutovaluo": 0,
+                "idEstado": 1,
+                "strUsuario": "16787889",
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "decUIT": 0,
+                "strComentario": "",
+                "strRegistroManual": "1",
+                "strFechaRegistro": "09/12/2020 19:16:24",
+                "decValor": -1
+            }
+        ],
+        "lBienMueble": [
+            {
+                "idHVBienMueble": 143729,
+                "strTengoBienMueble": "1",
+                "intItemMueble": 1,
+                "strVehiculo": "REGISTRO DE PROPIEDAD VEHICULAR",
+                "strMarca": "",
+                "strPlaca": "AXH007 ",
+                "decValor": 115998,
+                "idEstado": 1,
+                "strUsuario": null,
+                "strModelo": "",
+                "strAnio": "",
+                "strCaracteristica": "SUBARU-FORESTER",
+                "idHojaVida": 133878,
+                "strOrder": null,
+                "strComentario": "VALOR DE ADQUISICION",
+                "strRegistroManual": "2",
+                "strFechaRegistro": "11/12/2020 15:22:02"
+            }
+        ],
+        "lBienMuebleOtro": null,
+        "lTitularidad": [],
+        "oInfoAdicional": {
+            "idHVInfoAdicional": 130003,
+            "strTengoInfoAdicional": "1",
+            "strInfoAdicional": "- DEJA CONSTANCIA QUE SOBRE EL  VEHÍCULO SUBARU DE PLACA AXH-007 DECLARADO EN EL RUBRO VII, RECAE UN EMBARGO POR ORDEN JUDICIAL. (INCIDENTE 299-2017-51) EN PROCESO DE APELACION.\n\n-  EN EL RUBRO FORMACION ACADEMICA SE ADICIONA:  ESTUDIOS  EN LA  UNIVERSIDAD  ESTATAL DE NEW YORK (SUNY) AT STONY BROOK, EN LA FACULTAD  COLLEGE OF BUSINES, LA CARRERA  DE ADMINISTRACION DE EMPRESAS- NO CONCLUIDOS- PERIODO  1994-1995,",
+            "idEstado": 1,
+            "strUsuario": null,
+            "idHojaVida": 133878,
+            "intItemInfoAdicional": 0,
+            "idParamRubro": 0,
+            "strParamRubro": "",
+            "strFechaRegistro": "9/12/2020 19:20:40"
+        },
+        "lCargoElecPostula": [
+            {
+                "idCargoEleccion": 1,
+                "strCargoEleccion": "PRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "PRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 2,
+                "strCargoEleccion": "PRIMER VICEPRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "PRIMER(A) VICEPRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 3,
+                "strCargoEleccion": "SEGUNDO VICEPRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "SEGUNDO(A) VICEPRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 15,
+                "strCargoEleccion": "DIPUTADO",
+                "strCargoFormato": "DIPUTADO(A)",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 16,
+                "strCargoEleccion": "SENADOR",
+                "strCargoFormato": "SENADOR(A)",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 5,
+                "strCargoEleccion": "REPRESENTANTE ANTE EL PARLAMENTO ANDINO",
+                "strCargoFormato": "PARLAMENTARIO(A) ANDINO(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 6,
+                "strCargoEleccion": "GOBERNADOR REGIONAL",
+                "strCargoFormato": "GOBERNADOR(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 7,
+                "strCargoEleccion": "VICEGOBERNADOR REGIONAL",
+                "strCargoFormato": "VICEGOBERNADOR(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 12,
+                "strCargoEleccion": "CONSEJERO REGIONAL",
+                "strCargoFormato": "CONSEJERO(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 8,
+                "strCargoEleccion": "ALCALDE PROVINCIAL",
+                "strCargoFormato": "ALCALDE(SA) PROVINCIAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 10,
+                "strCargoEleccion": "ALCALDE DISTRITAL",
+                "strCargoFormato": "ALCALDE(SA) DISTRITAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 9,
+                "strCargoEleccion": "REGIDOR PROVINCIAL",
+                "strCargoFormato": "REGIDOR(A) PROVINCIAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 11,
+                "strCargoEleccion": "REGIDOR DISTRITAL",
+                "strCargoFormato": "REGIDOR(A) DISTRITAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            }
+        ],
+        "lCargoElecHistorico": [
+            {
+                "idCargoEleccion": 1,
+                "strCargoEleccion": "PRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "PRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 2,
+                "strCargoEleccion": "PRIMER VICEPRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "PRIMER(A) VICEPRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 3,
+                "strCargoEleccion": "SEGUNDO VICEPRESIDENTE DE LA REPÚBLICA",
+                "strCargoFormato": "SEGUNDO(A) VICEPRESIDENTE(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 4,
+                "strCargoEleccion": "CONGRESISTA DE LA REPÚBLICA",
+                "strCargoFormato": "CONGRESISTA",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 15,
+                "strCargoEleccion": "DIPUTADO",
+                "strCargoFormato": "DIPUTADO(A)",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 16,
+                "strCargoEleccion": "SENADOR",
+                "strCargoFormato": "SENADOR(A)",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 5,
+                "strCargoEleccion": "REPRESENTANTE ANTE EL PARLAMENTO ANDINO",
+                "strCargoFormato": "PARLAMENTARIO(A) ANDINO(A)",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 6,
+                "strCargoEleccion": "GOBERNADOR REGIONAL",
+                "strCargoFormato": "GOBERNADOR(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 7,
+                "strCargoEleccion": "VICEGOBERNADOR REGIONAL",
+                "strCargoFormato": "VICEGOBERNADOR(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 12,
+                "strCargoEleccion": "CONSEJERO REGIONAL",
+                "strCargoFormato": "CONSEJERO(A) REGIONAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 8,
+                "strCargoEleccion": "ALCALDE PROVINCIAL",
+                "strCargoFormato": "ALCALDE(SA) PROVINCIAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 10,
+                "strCargoEleccion": "ALCALDE DISTRITAL",
+                "strCargoFormato": "ALCALDE(SA) DISTRITAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 17,
+                "strCargoEleccion": "ALCADE(SA) DE CENTRO POBLADO",
+                "strCargoFormato": "ALCADE(SA) DE CENTRO POBLADO",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 9,
+                "strCargoEleccion": "REGIDOR PROVINCIAL",
+                "strCargoFormato": "REGIDOR(A) PROVINCIAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 11,
+                "strCargoEleccion": "REGIDOR DISTRITAL",
+                "strCargoFormato": "REGIDOR(A) DISTRITAL",
+                "idEstado": 2,
+                "strEstado": "ACTIVO (U)",
+                "strUsuario": null
+            },
+            {
+                "idCargoEleccion": 14,
+                "strCargoEleccion": "REGIDOR DE CENTRO POBLADO",
+                "strCargoFormato": "REGIDOR(A) DE CENTRO POBLADO",
+                "idEstado": 1,
+                "strEstado": "ACTIVO (R)",
+                "strUsuario": null
+            }
+        ],
+        "lAnotacionMarginal": [],
+        "lInfoAdicional": [
+            {
+                "idHVInfoAdicional": 130003,
+                "strTengoInfoAdicional": "1",
+                "strInfoAdicional": "- DEJA CONSTANCIA QUE SOBRE EL  VEHÍCULO SUBARU DE PLACA AXH-007 DECLARADO EN EL RUBRO VII, RECAE UN EMBARGO POR ORDEN JUDICIAL. (INCIDENTE 299-2017-51) EN PROCESO DE APELACION.\n\n-  EN EL RUBRO FORMACION ACADEMICA SE ADICIONA:  ESTUDIOS  EN LA  UNIVERSIDAD  ESTATAL DE NEW YORK (SUNY) AT STONY BROOK, EN LA FACULTAD  COLLEGE OF BUSINES, LA CARRERA  DE ADMINISTRACION DE EMPRESAS- NO CONCLUIDOS- PERIODO  1994-1995,",
+                "idEstado": 1,
+                "strUsuario": null,
+                "idHojaVida": 133878,
+                "intItemInfoAdicional": 0,
+                "idParamRubro": 0,
+                "strParamRubro": "",
+                "strFechaRegistro": "9/12/2020 19:20:40"
+            }
+        ],
+        "cumplimientoPenaParam": [
+            {
+                "idParametro": 20,
+                "idParamDependiente": 0,
+                "strNombreParametro": "PENA CUMPLIDA",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 21,
+                "idParamDependiente": 0,
+                "strNombreParametro": "EN CUMPLIMIENTO",
+                "feRegistro": null,
+                "idEstado": 0
+            }
+        ],
+        "modalidadParam": [
+            {
+                "idParametro": 10,
+                "idParamDependiente": 0,
+                "strNombreParametro": "EFECTIVA",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 11,
+                "idParamDependiente": 0,
+                "strNombreParametro": "SUSPENDIDA",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 12,
+                "idParamDependiente": 0,
+                "strNombreParametro": "RESERVA DE FALLO",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 13,
+                "idParamDependiente": 0,
+                "strNombreParametro": "OTRO",
+                "feRegistro": null,
+                "idEstado": 0
+            }
+        ],
+        "materiaParam": [
+            {
+                "idParametro": 15,
+                "idParamDependiente": 0,
+                "strNombreParametro": "LABORAL",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 16,
+                "idParamDependiente": 0,
+                "strNombreParametro": "FAMILIA / ALIMENTARIA",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 17,
+                "idParamDependiente": 0,
+                "strNombreParametro": "CONTRACTUAL",
+                "feRegistro": null,
+                "idEstado": 0
+            },
+            {
+                "idParametro": 18,
+                "idParamDependiente": 0,
+                "strNombreParametro": "VIOLENCIA FAMILIAR",
+                "feRegistro": null,
+                "idEstado": 0
+            }
+        ]
+    },
+    "type": 1,
+    "message": "",
+    "messageLog": "",
+    "success": true,
+    "aditional": 0,
+    "extravalue": null
+}

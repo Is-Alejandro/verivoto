@@ -1,0 +1,34 @@
+{
+    "procesos_electorales": [
+      {
+        "proceso_electoral": "ELECCIONES GENERALES 2016",
+        "cargo_postulado": "CONGRESISTA",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "LIMA + RESIDENTES EN EL EXTRANJERO",
+        "elegido": true,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "37.020%",
+          "posicion_obtenida_org_politica": 1,
+          "org_politica_logro_representacion": true,
+          "votos_preferenciales_candidato": 27771
+        }
+      },
+      {
+        "proceso_electoral": "ELECCIONES REGIONALES Y MUNICIPALES 2014",
+        "cargo_postulado": "ALCALDE DISTRITAL",
+        "organizacion_politica": "FUERZA POPULAR",
+        "circunscripcion": "LIMA - LIMA - SANTIAGO DE SURCO",
+        "elegido": false,
+        "detalles": {
+          "estado_lista": "INSCRITA",
+          "estado_candidato": "INSCRITO",
+          "porcentaje_votos_org_politica": "8.626%",
+          "posicion_obtenida_org_politica": 4,
+          "org_politica_logro_representacion": true,
+          "votos_preferenciales_candidato": 0
+        }
+      }
+    ]
+  }
